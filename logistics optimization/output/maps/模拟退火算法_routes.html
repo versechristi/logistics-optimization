@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_345e08733e056eadae620b5b52b118bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_345e08733e056eadae620b5b52b118bf" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_345e08733e056eadae620b5b52b118bf = L.map(
+                "map_345e08733e056eadae620b5b52b118bf",
+                {
+                    center: [39.9042, 116.4074],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_345e08733e056eadae620b5b52b118bf);
+
+            
+
+        
+    
+            var tile_layer_cc09c314ce036de4ca4d99ff44a29f15 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var marker_8c7e973ee7d7b0d016f80a0c7e760078 = L.marker(
+                [39.89698417275575, 116.40603468081699],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_c1b81a76cbc8a810ac3685f5cdf15c58 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_8c7e973ee7d7b0d016f80a0c7e760078.setIcon(icon_c1b81a76cbc8a810ac3685f5cdf15c58);
+        
+    
+            marker_8c7e973ee7d7b0d016f80a0c7e760078.bindTooltip(
+                `<div>
+                     物流中心 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_cf58da6de4925f391f36a09d82dbf5f1 = L.marker(
+                [39.91011247347519, 116.406245015921],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_1278faa216cca4f5a2ca5d20570c90e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_cf58da6de4925f391f36a09d82dbf5f1.setIcon(icon_1278faa216cca4f5a2ca5d20570c90e0);
+        
+    
+            marker_cf58da6de4925f391f36a09d82dbf5f1.bindTooltip(
+                `<div>
+                     物流中心 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_59aeaa3622bf6295b6e21d89855c10b7 = L.marker(
+                [39.900346494644126, 116.424187624821],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_501229e0f028d6d31c160c0bde0d5e3e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "home", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_59aeaa3622bf6295b6e21d89855c10b7.setIcon(icon_501229e0f028d6d31c160c0bde0d5e3e);
+        
+    
+            marker_59aeaa3622bf6295b6e21d89855c10b7.bindTooltip(
+                `<div>
+                     物流中心 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6a4007bdb0fbc9d2ec080f23be1b99a2 = L.marker(
+                [39.91472549907658, 116.35165919003823],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_a22fea9680e10ad0a231e628a689b665 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6a4007bdb0fbc9d2ec080f23be1b99a2.setIcon(icon_a22fea9680e10ad0a231e628a689b665);
+        
+    
+            marker_6a4007bdb0fbc9d2ec080f23be1b99a2.bindTooltip(
+                `<div>
+                     销售网点 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4099ebc096b46f18ecca77ef46dd331 = L.marker(
+                [39.86706332077951, 116.39902455068847],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_3c2bade66d0f1c90ed22de0d278b729e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_e4099ebc096b46f18ecca77ef46dd331.setIcon(icon_3c2bade66d0f1c90ed22de0d278b729e);
+        
+    
+            marker_e4099ebc096b46f18ecca77ef46dd331.bindTooltip(
+                `<div>
+                     销售网点 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_519ff9d250030c53e66542444a8f4598 = L.marker(
+                [39.86925136510941, 116.40397463982116],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_014ecdad925332e1d52fe1e59b0e51e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_519ff9d250030c53e66542444a8f4598.setIcon(icon_014ecdad925332e1d52fe1e59b0e51e0);
+        
+    
+            marker_519ff9d250030c53e66542444a8f4598.bindTooltip(
+                `<div>
+                     销售网点 3
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6c3cd2bd8d0cbca25cc01d3e806af430 = L.marker(
+                [39.94197792533765, 116.41016522888206],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_6c6b0de9135bdc68733d16acf335fd33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6c3cd2bd8d0cbca25cc01d3e806af430.setIcon(icon_6c6b0de9135bdc68733d16acf335fd33);
+        
+    
+            marker_6c3cd2bd8d0cbca25cc01d3e806af430.bindTooltip(
+                `<div>
+                     销售网点 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1216794f0b7b4f3de8543e1bfd72b6e7 = L.marker(
+                [39.94401908145793, 116.42768533184798],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_e077671fe3a6324712da16c8dfcc44ac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_1216794f0b7b4f3de8543e1bfd72b6e7.setIcon(icon_e077671fe3a6324712da16c8dfcc44ac);
+        
+    
+            marker_1216794f0b7b4f3de8543e1bfd72b6e7.bindTooltip(
+                `<div>
+                     销售网点 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_189950b56fc465648666934b2f8a0c3f = L.marker(
+                [39.88779526658342, 116.38420719674127],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_819696e017277e01e095b3e495d8f900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_189950b56fc465648666934b2f8a0c3f.setIcon(icon_819696e017277e01e095b3e495d8f900);
+        
+    
+            marker_189950b56fc465648666934b2f8a0c3f.bindTooltip(
+                `<div>
+                     销售网点 6
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6852f38b5eb5a01124fbcdc960718a5b = L.marker(
+                [39.925147076750314, 116.43745577097707],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_75e58b0ed2042a23f5927d3e19752c0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_6852f38b5eb5a01124fbcdc960718a5b.setIcon(icon_75e58b0ed2042a23f5927d3e19752c0b);
+        
+    
+            marker_6852f38b5eb5a01124fbcdc960718a5b.bindTooltip(
+                `<div>
+                     销售网点 7
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df4b112c7dfa25925f4d87dae66de6b3 = L.marker(
+                [39.915541373773564, 116.41715391291243],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_1c32291b426477f89bae6632cf1cdb4c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_df4b112c7dfa25925f4d87dae66de6b3.setIcon(icon_1c32291b426477f89bae6632cf1cdb4c);
+        
+    
+            marker_df4b112c7dfa25925f4d87dae66de6b3.bindTooltip(
+                `<div>
+                     销售网点 8
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fbed3c41f0708cb45d82e18a66de3c0c = L.marker(
+                [39.881421563934744, 116.45296732750185],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_9c71d588e862cd3ef6f571bea10a15f9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_fbed3c41f0708cb45d82e18a66de3c0c.setIcon(icon_9c71d588e862cd3ef6f571bea10a15f9);
+        
+    
+            marker_fbed3c41f0708cb45d82e18a66de3c0c.bindTooltip(
+                `<div>
+                     销售网点 9
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_40508e537a8a76e80086f7a65aa98faf = L.marker(
+                [39.91044216336859, 116.35148092270482],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_e34153f0ff2caeeaac6a6c75150fecfb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "store", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_40508e537a8a76e80086f7a65aa98faf.setIcon(icon_e34153f0ff2caeeaac6a6c75150fecfb);
+        
+    
+            marker_40508e537a8a76e80086f7a65aa98faf.bindTooltip(
+                `<div>
+                     销售网点 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4a832b44a13d5281e720e4db846721a3 = L.marker(
+                [39.91362414574309, 116.45083577357799],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_897415d5c3a8ea2dadddc37accd73b5b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4a832b44a13d5281e720e4db846721a3.setIcon(icon_897415d5c3a8ea2dadddc37accd73b5b);
+        
+    
+            marker_4a832b44a13d5281e720e4db846721a3.bindTooltip(
+                `<div>
+                     客户 1, 需求: 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_37cae919d498f4f477ac8364a1e6b87f = L.marker(
+                [39.96237929839716, 116.45299045536899],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_cf8c900947b6ba90559f7046da997bfc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_37cae919d498f4f477ac8364a1e6b87f.setIcon(icon_cf8c900947b6ba90559f7046da997bfc);
+        
+    
+            marker_37cae919d498f4f477ac8364a1e6b87f.bindTooltip(
+                `<div>
+                     客户 2, 需求: 89
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c10c413ee5847e8f8600592afed0f637 = L.marker(
+                [39.92603388627756, 116.34221462104462],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_3755e1eea0733743a7e6ad538d4b08d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_c10c413ee5847e8f8600592afed0f637.setIcon(icon_3755e1eea0733743a7e6ad538d4b08d1);
+        
+    
+            marker_c10c413ee5847e8f8600592afed0f637.bindTooltip(
+                `<div>
+                     客户 3, 需求: 36
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e2cc45741bfbfa9050dee49547db5a29 = L.marker(
+                [39.930694064787325, 116.32897971306696],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_87f29ddf7bedcee974e44899da530c06 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_e2cc45741bfbfa9050dee49547db5a29.setIcon(icon_87f29ddf7bedcee974e44899da530c06);
+        
+    
+            marker_e2cc45741bfbfa9050dee49547db5a29.bindTooltip(
+                `<div>
+                     客户 4, 需求: 35
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a3bb82ae480c0ecd55b660c6b73e6c3f = L.marker(
+                [39.914965435053446, 116.38605480692169],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_d959c97efc8701d27752e1268d12a2fc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a3bb82ae480c0ecd55b660c6b73e6c3f.setIcon(icon_d959c97efc8701d27752e1268d12a2fc);
+        
+    
+            marker_a3bb82ae480c0ecd55b660c6b73e6c3f.bindTooltip(
+                `<div>
+                     客户 5, 需求: 28
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1fbe1497e687cc7729e3ac9d69a376cd = L.marker(
+                [39.879564101646274, 116.35712347473681],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_b6775dec7d9624c7bf62e69a8375923a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_1fbe1497e687cc7729e3ac9d69a376cd.setIcon(icon_b6775dec7d9624c7bf62e69a8375923a);
+        
+    
+            marker_1fbe1497e687cc7729e3ac9d69a376cd.bindTooltip(
+                `<div>
+                     客户 6, 需求: 68
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_af494670301cbc994d934f7ae0ff5b35 = L.marker(
+                [39.8942708972302, 116.45695812367372],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_8613e220ace083e3f7f99c63215c1d9b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_af494670301cbc994d934f7ae0ff5b35.setIcon(icon_8613e220ace083e3f7f99c63215c1d9b);
+        
+    
+            marker_af494670301cbc994d934f7ae0ff5b35.bindTooltip(
+                `<div>
+                     客户 7, 需求: 67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_426afda185243739040c159a0a4a586b = L.marker(
+                [39.90941073379385, 116.38389881609923],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_836cc02e29960800fdc1129524aa823a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_426afda185243739040c159a0a4a586b.setIcon(icon_836cc02e29960800fdc1129524aa823a);
+        
+    
+            marker_426afda185243739040c159a0a4a586b.bindTooltip(
+                `<div>
+                     客户 8, 需求: 57
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_04ba691207b2d1c76bf98c9f1ebe142f = L.marker(
+                [39.87816200681612, 116.42469867967722],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_1ca041e32105aa23c54da9e055c0d37f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_04ba691207b2d1c76bf98c9f1ebe142f.setIcon(icon_1ca041e32105aa23c54da9e055c0d37f);
+        
+    
+            marker_04ba691207b2d1c76bf98c9f1ebe142f.bindTooltip(
+                `<div>
+                     客户 9, 需求: 78
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7e37d79b61ea723d3d1d16a7695b7d6c = L.marker(
+                [39.905582599437906, 116.41765479559402],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_beb587b1ef177de7c9d825733ddcf443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7e37d79b61ea723d3d1d16a7695b7d6c.setIcon(icon_beb587b1ef177de7c9d825733ddcf443);
+        
+    
+            marker_7e37d79b61ea723d3d1d16a7695b7d6c.bindTooltip(
+                `<div>
+                     客户 10, 需求: 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_78fbb1ea378a282347d407e450bc8288 = L.marker(
+                [39.90797527356758, 116.3891643366155],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_69e39ffd5ed2d52700e2ba2eff1b2c71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_78fbb1ea378a282347d407e450bc8288.setIcon(icon_69e39ffd5ed2d52700e2ba2eff1b2c71);
+        
+    
+            marker_78fbb1ea378a282347d407e450bc8288.bindTooltip(
+                `<div>
+                     客户 11, 需求: 65
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7ef6533c601403e9ab16771293d1d3cf = L.marker(
+                [39.84834829720738, 116.41719268241671],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_9fc98bbe3d99f7e637c94e4f608fbd23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7ef6533c601403e9ab16771293d1d3cf.setIcon(icon_9fc98bbe3d99f7e637c94e4f608fbd23);
+        
+    
+            marker_7ef6533c601403e9ab16771293d1d3cf.bindTooltip(
+                `<div>
+                     客户 12, 需求: 92
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_91cb52602262ca89fd437b428cf7f98a = L.marker(
+                [39.90147061049138, 116.45061891690025],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_774ac0463ed1118df87b0feb44a1d2a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_91cb52602262ca89fd437b428cf7f98a.setIcon(icon_774ac0463ed1118df87b0feb44a1d2a1);
+        
+    
+            marker_91cb52602262ca89fd437b428cf7f98a.bindTooltip(
+                `<div>
+                     客户 13, 需求: 79
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9e4c4993f95f27b7970c0340b0ccbc05 = L.marker(
+                [39.90931490521804, 116.35621634376423],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_76f7d2b3a14b2f9d32d3ab68ad8b8a99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_9e4c4993f95f27b7970c0340b0ccbc05.setIcon(icon_76f7d2b3a14b2f9d32d3ab68ad8b8a99);
+        
+    
+            marker_9e4c4993f95f27b7970c0340b0ccbc05.bindTooltip(
+                `<div>
+                     客户 14, 需求: 67
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7245b114d3f50471243e3c20f0a66abc = L.marker(
+                [39.90109171049829, 116.42268886409867],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_a546256db8e0093e9712cb17c86ff8ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_7245b114d3f50471243e3c20f0a66abc.setIcon(icon_a546256db8e0093e9712cb17c86ff8ee);
+        
+    
+            marker_7245b114d3f50471243e3c20f0a66abc.bindTooltip(
+                `<div>
+                     客户 15, 需求: 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_4dcb97130958c427b742bb4b4ac3175d = L.marker(
+                [39.8942080874725, 116.39485878244349],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_5f4f4820c58f2f3fe33b8a98cdb3103f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_4dcb97130958c427b742bb4b4ac3175d.setIcon(icon_5f4f4820c58f2f3fe33b8a98cdb3103f);
+        
+    
+            marker_4dcb97130958c427b742bb4b4ac3175d.bindTooltip(
+                `<div>
+                     客户 16, 需求: 76
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b99591211dcf2dc85683c9c4edc8ee47 = L.marker(
+                [39.93063767187736, 116.34746950130399],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_e7f442eb433be1c1ceea7fab0389ca33 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_b99591211dcf2dc85683c9c4edc8ee47.setIcon(icon_e7f442eb433be1c1ceea7fab0389ca33);
+        
+    
+            marker_b99591211dcf2dc85683c9c4edc8ee47.bindTooltip(
+                `<div>
+                     客户 17, 需求: 75
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_35f4b9f97e83438070d19dd0b2548bb3 = L.marker(
+                [39.891927106849394, 116.40467677401543],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_6bba9d9416c86d74620ba60a9eb9b4bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_35f4b9f97e83438070d19dd0b2548bb3.setIcon(icon_6bba9d9416c86d74620ba60a9eb9b4bb);
+        
+    
+            marker_35f4b9f97e83438070d19dd0b2548bb3.bindTooltip(
+                `<div>
+                     客户 18, 需求: 82
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5b578ac23055db7aebc3515ca30bbc7c = L.marker(
+                [39.93569690134631, 116.33361227153854],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_36f1c34f39f3d3cbb4e170eabc680c8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_5b578ac23055db7aebc3515ca30bbc7c.setIcon(icon_36f1c34f39f3d3cbb4e170eabc680c8b);
+        
+    
+            marker_5b578ac23055db7aebc3515ca30bbc7c.bindTooltip(
+                `<div>
+                     客户 19, 需求: 12
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d95fc1cab944b980288800f53d88e5fd = L.marker(
+                [39.88524823980385, 116.4078422999246],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_64d91f30616436ca52019350c880703d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_d95fc1cab944b980288800f53d88e5fd.setIcon(icon_64d91f30616436ca52019350c880703d);
+        
+    
+            marker_d95fc1cab944b980288800f53d88e5fd.bindTooltip(
+                `<div>
+                     客户 20, 需求: 48
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a15ca62b9be27e5e8b859430ba5d009 = L.marker(
+                [39.94547714981608, 116.44241189413492],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_0e476ec454332be585e5097d77c20995 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_2a15ca62b9be27e5e8b859430ba5d009.setIcon(icon_0e476ec454332be585e5097d77c20995);
+        
+    
+            marker_2a15ca62b9be27e5e8b859430ba5d009.bindTooltip(
+                `<div>
+                     客户 21, 需求: 17
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ca3765f887a0e7ce44142bd88b8de20 = L.marker(
+                [39.889389810272775, 116.39207446699965],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_88569819bdc035e346e19cb4ce87c6a7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_0ca3765f887a0e7ce44142bd88b8de20.setIcon(icon_88569819bdc035e346e19cb4ce87c6a7);
+        
+    
+            marker_0ca3765f887a0e7ce44142bd88b8de20.bindTooltip(
+                `<div>
+                     客户 22, 需求: 62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3063da483eea2d9cdb36434f1ee103e4 = L.marker(
+                [39.94571284860797, 116.4371481810669],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_7fa80857e0a149e11ac03e9cb83f01a1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3063da483eea2d9cdb36434f1ee103e4.setIcon(icon_7fa80857e0a149e11ac03e9cb83f01a1);
+        
+    
+            marker_3063da483eea2d9cdb36434f1ee103e4.bindTooltip(
+                `<div>
+                     客户 23, 需求: 50
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_45476d337dd05d91adf73366459c8cc0 = L.marker(
+                [39.89638906510205, 116.43784490991284],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_85e2389541de8f8849778f7505d80a59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_45476d337dd05d91adf73366459c8cc0.setIcon(icon_85e2389541de8f8849778f7505d80a59);
+        
+    
+            marker_45476d337dd05d91adf73366459c8cc0.bindTooltip(
+                `<div>
+                     客户 24, 需求: 88
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f90a55b80d71daeb5bf97429ce53a3aa = L.marker(
+                [39.95472692208839, 116.3803533266822],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_092e9895f5d913c6c8dbe71da15e437d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_f90a55b80d71daeb5bf97429ce53a3aa.setIcon(icon_092e9895f5d913c6c8dbe71da15e437d);
+        
+    
+            marker_f90a55b80d71daeb5bf97429ce53a3aa.bindTooltip(
+                `<div>
+                     客户 25, 需求: 5
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a9badce4eaff4c56e350fdd07399cfcf = L.marker(
+                [39.906890701228264, 116.32398509903364],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_5ceb688df45117bbfa08fa6986c98ea0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_a9badce4eaff4c56e350fdd07399cfcf.setIcon(icon_5ceb688df45117bbfa08fa6986c98ea0);
+        
+    
+            marker_a9badce4eaff4c56e350fdd07399cfcf.bindTooltip(
+                `<div>
+                     客户 26, 需求: 51
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_61c733cc59ce7377636140a35375765e = L.marker(
+                [39.95941498556441, 116.38915306070497],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_8a52b153036fc9d6b3572b7982831dd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_61c733cc59ce7377636140a35375765e.setIcon(icon_8a52b153036fc9d6b3572b7982831dd9);
+        
+    
+            marker_61c733cc59ce7377636140a35375765e.bindTooltip(
+                `<div>
+                     客户 27, 需求: 62
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bc2a4497735ea10868b25ed9c1c68df1 = L.marker(
+                [39.91069350293757, 116.40223916663793],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_3d9708627c06d73246ff050fd7c40d25 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_bc2a4497735ea10868b25ed9c1c68df1.setIcon(icon_3d9708627c06d73246ff050fd7c40d25);
+        
+    
+            marker_bc2a4497735ea10868b25ed9c1c68df1.bindTooltip(
+                `<div>
+                     客户 28, 需求: 97
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fa612dc110db6afd1c09be6bc4d20559 = L.marker(
+                [39.886602883074474, 116.46060023809044],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_95a429e0215a9b8e39d4d5271db40c51 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_fa612dc110db6afd1c09be6bc4d20559.setIcon(icon_95a429e0215a9b8e39d4d5271db40c51);
+        
+    
+            marker_fa612dc110db6afd1c09be6bc4d20559.bindTooltip(
+                `<div>
+                     客户 29, 需求: 18
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_545ef28fd06aae491c0ebb3116d82575 = L.marker(
+                [39.932630081902246, 116.43819678836265],
+                {}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            var icon_69f9739e1024341024b6cc7b3bd0316d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "user", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_545ef28fd06aae491c0ebb3116d82575.setIcon(icon_69f9739e1024341024b6cc7b3bd0316d);
+        
+    
+            marker_545ef28fd06aae491c0ebb3116d82575.bindTooltip(
+                `<div>
+                     客户 30, 需求: 10
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_f9b3d00f5f3e42f31cc92267543f2959 = L.polyline(
+                [[39.89698417275575, 116.40603468081699], [39.932630081902246, 116.43819678836265], [39.94571284860797, 116.4371481810669], [39.96237929839716, 116.45299045536899], [39.95472692208839, 116.3803533266822], [39.93569690134631, 116.33361227153854], [39.92603388627756, 116.34221462104462], [39.90931490521804, 116.35621634376423], [39.879564101646274, 116.35712347473681], [39.90941073379385, 116.38389881609923], [39.914965435053446, 116.38605480692169], [39.90797527356758, 116.3891643366155], [39.91069350293757, 116.40223916663793], [39.905582599437906, 116.41765479559402], [39.90109171049829, 116.42268886409867], [39.89638906510205, 116.43784490991284], [39.87816200681612, 116.42469867967722], [39.84834829720738, 116.41719268241671], [39.88524823980385, 116.4078422999246], [39.889389810272775, 116.39207446699965], [39.8942080874725, 116.39485878244349], [39.89698417275575, 116.40603468081699]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            poly_line_f9b3d00f5f3e42f31cc92267543f2959.bindTooltip(
+                `<div>
+                     车辆 2
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_a0c8bf4133bd78dcb673961ff7ab3e14 = L.polyline(
+                [[39.89698417275575, 116.40603468081699], [39.891927106849394, 116.40467677401543], [39.89698417275575, 116.40603468081699]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            poly_line_a0c8bf4133bd78dcb673961ff7ab3e14.bindTooltip(
+                `<div>
+                     无人机 1
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var poly_line_9ae62e3eeaf03c76151432454b885c7b = L.polyline(
+                [[39.89698417275575, 116.40603468081699], [39.886602883074474, 116.46060023809044], [39.8942708972302, 116.45695812367372], [39.90147061049138, 116.45061891690025], [39.91362414574309, 116.45083577357799], [39.94547714981608, 116.44241189413492], [39.95941498556441, 116.38915306070497], [39.93063767187736, 116.34746950130399], [39.930694064787325, 116.32897971306696], [39.906890701228264, 116.32398509903364], [39.89698417275575, 116.40603468081699]],
+                {"bubblingMouseEvents": true, "color": "purple", "dashArray": "5, 5", "dashOffset": null, "fill": false, "fillColor": "purple", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_345e08733e056eadae620b5b52b118bf);
+        
+    
+            poly_line_9ae62e3eeaf03c76151432454b885c7b.bindTooltip(
+                `<div>
+                     无人机 4
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

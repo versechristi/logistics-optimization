@@ -1,0 +1,151 @@
+======================================================================
+ Optimization Report: Genetic Algorithm
+======================================================================
+
+--- Overall Summary ---
+Feasibility Status: Feasible (All demand met)
+Final Weighted Cost:  418.2708
+  Raw Transport Cost: 695.74
+  Total Time (Makespan): 2.060 hrs
+  Final Unmet Demand: 0.0000
+Algorithm Runtime:    N/A seconds
+
+--- Stage 1 Routes (Depot -> Outlets -> Depot) ---
+
+  Depot 0 (40.0213, 116.3427):
+    - Route: D0 -> O5 -> O6 -> O0 -> O4 -> D0
+
+  Depot 1 (39.9901, 116.5196):
+    - Route: D1 -> O9 -> O7 -> O8 -> O2 -> O1 -> O3 -> D1
+
+--- Stage 2 Trips (Outlet -> Customers -> Outlet) ---
+
+  Outlet 0 (39.9276, 116.2569):
+    - Trip 1: O0 -> C44 -> C37 -> O0 (Type: Vehicle, Load: 25.11, Cost: 56.40, Time: 0.705)
+
+  Outlet 1 (39.8401, 116.5189):
+    - Trip 1: O1 -> C29 -> C16 -> C48 -> C49 -> C25 -> C34 -> O1 (Type: Vehicle, Load: 83.49, Cost: 66.38, Time: 0.830)
+
+  Outlet 2 (39.8926, 116.4682):
+    - Trip 1: O2 -> C39 -> C36 -> O2 (Type: Vehicle, Load: 26.61, Cost: 36.49, Time: 0.456)
+
+  Outlet 3 (39.9752, 116.5112):
+    - Trip 1: O3 -> C18 -> O3 (Type: Vehicle, Load: 12.16, Cost: 8.78, Time: 0.110)
+
+  Outlet 4 (39.9142, 116.3818):
+    - Trip 1: O4 -> C14 -> C11 -> C26 -> C28 -> C21 -> C3 -> C0 -> O4 (Type: Vehicle, Load: 100.00, Cost: 22.92, Time: 0.286)
+    - Trip 2: O4 -> C0 -> O4 (Type: Drone, Load: 5.00, Cost: 4.99, Time: 0.083)
+    - Trip 3: O4 -> C27 -> O4 (Type: Drone, Load: 5.00, Cost: 5.39, Time: 0.090)
+    - Trip 4: O4 -> C31 -> O4 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 5: O4 -> C13 -> O4 (Type: Drone, Load: 5.00, Cost: 8.47, Time: 0.141)
+    - Trip 6: O4 -> C35 -> O4 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 7: O4 -> C0 -> C27 -> C31 -> C13 -> C35 -> C32 -> C47 -> C2 -> C42 -> O4 (Type: Vehicle, Load: 100.00, Cost: 78.54, Time: 0.982)
+    - Trip 8: O4 -> C42 -> C9 -> O4 (Type: Vehicle, Load: 16.97, Cost: 45.92, Time: 0.574)
+
+  Outlet 5 (39.9738, 116.2768):
+    - Trip 1: O5 -> C30 -> O5 (Type: Vehicle, Load: 7.12, Cost: 20.95, Time: 0.262)
+
+  Outlet 6 (39.9625, 116.2534):
+    - No trips assigned or invalid data type (<class 'list'>).
+
+  Outlet 7 (39.9329, 116.4170):
+    - Trip 1: O7 -> C5 -> O7 (Type: Vehicle, Load: 16.88, Cost: 17.35, Time: 0.217)
+
+  Outlet 8 (39.9222, 116.4124):
+    - Trip 1: O8 -> C24 -> C22 -> C19 -> C15 -> C41 -> C45 -> C12 -> O8 (Type: Vehicle, Load: 100.00, Cost: 16.82, Time: 0.210)
+    - Trip 2: O8 -> C12 -> O8 (Type: Drone, Load: 5.00, Cost: 3.96, Time: 0.066)
+    - Trip 3: O8 -> C43 -> O8 (Type: Drone, Load: 5.00, Cost: 4.03, Time: 0.067)
+    - Trip 4: O8 -> C38 -> O8 (Type: Drone, Load: 5.00, Cost: 4.14, Time: 0.069)
+    - Trip 5: O8 -> C8 -> O8 (Type: Drone, Load: 5.00, Cost: 4.18, Time: 0.070)
+    - Trip 6: O8 -> C4 -> O8 (Type: Drone, Load: 5.00, Cost: 4.21, Time: 0.070)
+    - Trip 7: O8 -> C17 -> O8 (Type: Drone, Load: 5.00, Cost: 4.31, Time: 0.072)
+    - Trip 8: O8 -> C33 -> O8 (Type: Drone, Load: 5.00, Cost: 4.35, Time: 0.072)
+    - Trip 9: O8 -> C1 -> O8 (Type: Drone, Load: 5.00, Cost: 4.43, Time: 0.074)
+    - Trip 10: O8 -> C40 -> O8 (Type: Drone, Load: 5.00, Cost: 5.60, Time: 0.093)
+    - Trip 11: O8 -> C12 -> C43 -> C38 -> C8 -> C4 -> C17 -> C33 -> O8 (Type: Vehicle, Load: 100.00, Cost: 14.86, Time: 0.186)
+    - Trip 12: O8 -> C33 -> O8 (Type: Drone, Load: 0.27, Cost: 4.35, Time: 0.072)
+    - Trip 13: O8 -> C1 -> O8 (Type: Drone, Load: 4.06, Cost: 4.43, Time: 0.074)
+    - Trip 14: O8 -> C40 -> O8 (Type: Drone, Load: 5.00, Cost: 5.60, Time: 0.093)
+    - Trip 15: O8 -> C40 -> O8 (Type: Vehicle, Load: 8.83, Cost: 11.20, Time: 0.140)
+
+  Outlet 9 (39.9886, 116.4682):
+    - Trip 1: O9 -> C23 -> C20 -> C10 -> C46 -> C7 -> C6 -> O9 (Type: Vehicle, Load: 87.44, Cost: 49.98, Time: 0.625)
+
+--- Customer Demand Fulfillment Status ---
+
+  Total Customers: 50
+    Fully Served:   50 (100.0%)
+    Partially Served: 0 (0.0%)
+    Unserved:       0 (0.0%)
+  Total Initial Demand: 708.95
+  Total Remaining Demand: 0.0000
+
+  --- Detailed Status ---
+  CustIdx | Initial Demand | Final Remaining | Status
+  --------|----------------|-----------------|--------
+  0       |          16.61 |          0.0000 | Served
+  1       |           9.06 |          0.0000 | Served
+  2       |           8.72 |          0.0000 | Served
+  3       |          15.19 |          0.0000 | Served
+  4       |          15.21 |          0.0000 | Served
+  5       |          16.88 |          0.0000 | Served
+  6       |          11.23 |          0.0000 | Served
+  7       |          17.12 |          0.0000 | Served
+  8       |          16.48 |          0.0000 | Served
+  9       |           7.47 |          0.0000 | Served
+  10      |          13.49 |          0.0000 | Served
+  11      |          11.08 |          0.0000 | Served
+  12      |          17.97 |          0.0000 | Served
+  13      |          19.28 |          0.0000 | Served
+  14      |          18.55 |          0.0000 | Served
+  15      |          19.33 |          0.0000 | Served
+  16      |          16.80 |          0.0000 | Served
+  17      |          24.24 |          0.0000 | Served
+  18      |          12.16 |          0.0000 | Served
+  19      |          11.79 |          0.0000 | Served
+  20      |          19.77 |          0.0000 | Served
+  21      |          23.42 |          0.0000 | Served
+  22      |          11.10 |          0.0000 | Served
+  23      |          18.42 |          0.0000 | Served
+  24      |          21.15 |          0.0000 | Served
+  25      |           7.13 |          0.0000 | Served
+  26      |           5.39 |          0.0000 | Served
+  27      |           6.33 |          0.0000 | Served
+  28      |          18.06 |          0.0000 | Served
+  29      |          24.48 |          0.0000 | Served
+  30      |           7.12 |          0.0000 | Served
+  31      |          10.21 |          0.0000 | Served
+  32      |           8.84 |          0.0000 | Served
+  33      |           7.49 |          0.0000 | Served
+  34      |          18.59 |          0.0000 | Served
+  35      |          13.16 |          0.0000 | Served
+  36      |          17.99 |          0.0000 | Served
+  37      |           5.94 |          0.0000 | Served
+  38      |          16.73 |          0.0000 | Served
+  39      |           8.63 |          0.0000 | Served
+  40      |          18.83 |          0.0000 | Served
+  41      |          11.54 |          0.0000 | Served
+  42      |          12.24 |          0.0000 | Served
+  43      |           8.34 |          0.0000 | Served
+  44      |          19.17 |          0.0000 | Served
+  45      |          23.92 |          0.0000 | Served
+  46      |           7.40 |          0.0000 | Served
+  47      |          22.44 |          0.0000 | Served
+  48      |           5.89 |          0.0000 | Served
+  49      |          10.61 |          0.0000 | Served
+
+
+--- Parameters Used ---
+  Algorithm Parameters:
+    - crossover_rate: 0.8
+    - elite_count: 2
+    - mutation_rate: 0.15
+    - num_generations: 100
+    - population_size: 50
+    - tournament_size: 5
+
+Report generated on: 2025-04-25 14:45:56
+Report generation time: 0.002 seconds.
+======================================================================
+--- End of Report: Genetic Algorithm ---
+======================================================================
