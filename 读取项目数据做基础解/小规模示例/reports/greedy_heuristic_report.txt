@@ -1,0 +1,260 @@
+======================================================================
+ Optimization Report: Greedy Heuristic
+======================================================================
+
+--- Overall Summary ---
+Feasibility Status: Feasible (All demand met)
+Final Weighted Cost:  1007.2254
+  Raw Transport Cost: 1677.33
+  Total Time (Makespan): 2.063 hrs
+  Final Unmet Demand: 0.0000
+Algorithm Runtime:    N/A seconds
+
+--- Stage 1 Routes (Depot -> Outlets -> Depot) ---
+
+  Depot 0 (39.8119, 116.3910):
+    - Route: D0 -> O2 -> O1 -> O5 -> O9 -> D0
+
+  Depot 1 (39.9499, 116.4182):
+    - Route: D1 -> O3 -> O4 -> O7 -> O8 -> O0 -> O6 -> D1
+
+--- Stage 2 Trips (Outlet -> Customers -> Outlet) ---
+
+  Outlet 0 (39.8738, 116.4844):
+    - Trip 1: O0 -> C40 -> C19 -> O0 (Type: Vehicle, Load: 100.00, Cost: 17.06, Time: 0.213)
+    - Trip 2: O0 -> C19 -> O0 (Type: Drone, Load: 5.00, Cost: 8.40, Time: 0.140)
+    - Trip 3: O0 -> C19 -> O0 (Type: Vehicle, Load: 51.06, Cost: 16.80, Time: 0.210)
+
+  Outlet 1 (39.8591, 116.3720):
+    - Trip 1: O1 -> C45 -> C14 -> O1 (Type: Vehicle, Load: 100.00, Cost: 9.54, Time: 0.119)
+    - Trip 2: O1 -> C14 -> O1 (Type: Drone, Load: 5.00, Cost: 4.08, Time: 0.068)
+    - Trip 3: O1 -> C35 -> O1 (Type: Drone, Load: 5.00, Cost: 6.14, Time: 0.102)
+    - Trip 4: O1 -> C9 -> O1 (Type: Drone, Load: 5.00, Cost: 8.41, Time: 0.140)
+    - Trip 5: O1 -> C14 -> C35 -> C9 -> C23 -> O1 (Type: Vehicle, Load: 100.00, Cost: 40.14, Time: 0.502)
+    - Trip 6: O1 -> C23 -> C48 -> O1 (Type: Vehicle, Load: 100.00, Cost: 37.53, Time: 0.469)
+    - Trip 7: O1 -> C48 -> O1 (Type: Vehicle, Load: 86.93, Cost: 35.48, Time: 0.444)
+
+  Outlet 2 (39.8420, 116.3781):
+    - Trip 1: O2 -> C43 -> C41 -> O2 (Type: Vehicle, Load: 100.00, Cost: 9.13, Time: 0.114)
+    - Trip 2: O2 -> C41 -> O2 (Type: Drone, Load: 5.00, Cost: 3.74, Time: 0.062)
+    - Trip 3: O2 -> C41 -> O2 (Type: Vehicle, Load: 12.08, Cost: 7.49, Time: 0.094)
+
+  Outlet 3 (39.9425, 116.4153):
+    - Trip 1: O3 -> C18 -> C27 -> C28 -> O3 (Type: Vehicle, Load: 100.00, Cost: 23.39, Time: 0.292)
+    - Trip 2: O3 -> C28 -> O3 (Type: Drone, Load: 5.00, Cost: 5.84, Time: 0.097)
+    - Trip 3: O3 -> C33 -> O3 (Type: Drone, Load: 5.00, Cost: 5.96, Time: 0.099)
+    - Trip 4: O3 -> C6 -> O3 (Type: Drone, Load: 5.00, Cost: 7.25, Time: 0.121)
+    - Trip 5: O3 -> C10 -> O3 (Type: Drone, Load: 5.00, Cost: 9.16, Time: 0.153)
+    - Trip 6: O3 -> C28 -> C33 -> C6 -> O3 (Type: Vehicle, Load: 100.00, Cost: 25.67, Time: 0.321)
+    - Trip 7: O3 -> C6 -> O3 (Type: Drone, Load: 5.00, Cost: 7.25, Time: 0.121)
+    - Trip 8: O3 -> C10 -> O3 (Type: Drone, Load: 5.00, Cost: 9.16, Time: 0.153)
+    - Trip 9: O3 -> C6 -> C10 -> C49 -> O3 (Type: Vehicle, Load: 100.00, Cost: 34.48, Time: 0.431)
+    - Trip 10: O3 -> C49 -> C44 -> O3 (Type: Vehicle, Load: 76.60, Cost: 26.95, Time: 0.337)
+
+  Outlet 4 (39.9506, 116.3952):
+    - Trip 1: O4 -> C47 -> O4 (Type: Vehicle, Load: 68.93, Cost: 5.39, Time: 0.067)
+
+  Outlet 5 (39.8541, 116.5008):
+    - Trip 1: O5 -> C26 -> C11 -> O5 (Type: Vehicle, Load: 100.00, Cost: 22.83, Time: 0.285)
+    - Trip 2: O5 -> C11 -> O5 (Type: Vehicle, Load: 8.07, Cost: 22.81, Time: 0.285)
+
+  Outlet 6 (39.9288, 116.5679):
+    - Trip 1: O6 -> C36 -> C42 -> O6 (Type: Vehicle, Load: 100.00, Cost: 23.60, Time: 0.295)
+    - Trip 2: O6 -> C42 -> O6 (Type: Drone, Load: 5.00, Cost: 9.02, Time: 0.150)
+    - Trip 3: O6 -> C42 -> O6 (Type: Vehicle, Load: 64.23, Cost: 18.03, Time: 0.225)
+
+  Outlet 7 (39.9635, 116.3751):
+    - Trip 1: O7 -> C8 -> C20 -> O7 (Type: Vehicle, Load: 100.00, Cost: 15.16, Time: 0.189)
+    - Trip 2: O7 -> C20 -> O7 (Type: Drone, Load: 5.00, Cost: 7.25, Time: 0.121)
+    - Trip 3: O7 -> C37 -> O7 (Type: Drone, Load: 5.00, Cost: 8.23, Time: 0.137)
+    - Trip 4: O7 -> C20 -> C37 -> O7 (Type: Vehicle, Load: 100.00, Cost: 21.59, Time: 0.270)
+    - Trip 5: O7 -> C37 -> O7 (Type: Drone, Load: 5.00, Cost: 8.23, Time: 0.137)
+    - Trip 6: O7 -> C37 -> C39 -> O7 (Type: Vehicle, Load: 100.00, Cost: 52.72, Time: 0.659)
+    - Trip 7: O7 -> C39 -> C1 -> O7 (Type: Vehicle, Load: 100.00, Cost: 78.36, Time: 0.980)
+    - Trip 8: O7 -> C1 -> O7 (Type: Vehicle, Load: 0.27, Cost: 42.36, Time: 0.530)
+
+  Outlet 8 (39.9119, 116.3757):
+    - Trip 1: O8 -> C25 -> C12 -> O8 (Type: Vehicle, Load: 100.00, Cost: 9.31, Time: 0.116)
+    - Trip 2: O8 -> C12 -> O8 (Type: Drone, Load: 5.00, Cost: 3.93, Time: 0.065)
+    - Trip 3: O8 -> C4 -> O8 (Type: Drone, Load: 5.00, Cost: 4.23, Time: 0.070)
+    - Trip 4: O8 -> C21 -> O8 (Type: Drone, Load: 5.00, Cost: 5.00, Time: 0.083)
+    - Trip 5: O8 -> C13 -> O8 (Type: Drone, Load: 5.00, Cost: 5.18, Time: 0.086)
+    - Trip 6: O8 -> C31 -> O8 (Type: Drone, Load: 5.00, Cost: 5.43, Time: 0.090)
+    - Trip 7: O8 -> C17 -> O8 (Type: Drone, Load: 5.00, Cost: 5.66, Time: 0.094)
+    - Trip 8: O8 -> C3 -> O8 (Type: Drone, Load: 5.00, Cost: 5.67, Time: 0.095)
+    - Trip 9: O8 -> C2 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 10: O8 -> C24 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 11: O8 -> C7 -> O8 (Type: Drone, Load: 5.00, Cost: 5.80, Time: 0.097)
+    - Trip 12: O8 -> C38 -> O8 (Type: Drone, Load: 5.00, Cost: 5.89, Time: 0.098)
+    - Trip 13: O8 -> C5 -> O8 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 14: O8 -> C16 -> O8 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 15: O8 -> C22 -> O8 (Type: Drone, Load: 5.00, Cost: 6.47, Time: 0.108)
+    - Trip 16: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 17: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 18: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 19: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 20: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 21: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 22: O8 -> C12 -> C4 -> C21 -> O8 (Type: Vehicle, Load: 100.00, Cost: 21.48, Time: 0.269)
+    - Trip 23: O8 -> C21 -> O8 (Type: Drone, Load: 5.00, Cost: 5.00, Time: 0.083)
+    - Trip 24: O8 -> C13 -> O8 (Type: Drone, Load: 5.00, Cost: 5.18, Time: 0.086)
+    - Trip 25: O8 -> C31 -> O8 (Type: Drone, Load: 5.00, Cost: 5.43, Time: 0.090)
+    - Trip 26: O8 -> C17 -> O8 (Type: Drone, Load: 5.00, Cost: 5.66, Time: 0.094)
+    - Trip 27: O8 -> C3 -> O8 (Type: Drone, Load: 5.00, Cost: 5.67, Time: 0.095)
+    - Trip 28: O8 -> C2 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 29: O8 -> C24 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 30: O8 -> C7 -> O8 (Type: Drone, Load: 5.00, Cost: 5.80, Time: 0.097)
+    - Trip 31: O8 -> C38 -> O8 (Type: Drone, Load: 5.00, Cost: 5.89, Time: 0.098)
+    - Trip 32: O8 -> C5 -> O8 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 33: O8 -> C16 -> O8 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 34: O8 -> C22 -> O8 (Type: Drone, Load: 5.00, Cost: 6.47, Time: 0.108)
+    - Trip 35: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 36: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 37: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 38: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 39: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 40: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 41: O8 -> C21 -> C13 -> O8 (Type: Vehicle, Load: 100.00, Cost: 16.42, Time: 0.205)
+    - Trip 42: O8 -> C13 -> O8 (Type: Drone, Load: 4.10, Cost: 5.18, Time: 0.086)
+    - Trip 43: O8 -> C31 -> O8 (Type: Drone, Load: 5.00, Cost: 5.43, Time: 0.090)
+    - Trip 44: O8 -> C17 -> O8 (Type: Drone, Load: 5.00, Cost: 5.66, Time: 0.094)
+    - Trip 45: O8 -> C3 -> O8 (Type: Drone, Load: 5.00, Cost: 5.67, Time: 0.095)
+    - Trip 46: O8 -> C2 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 47: O8 -> C24 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 48: O8 -> C7 -> O8 (Type: Drone, Load: 5.00, Cost: 5.80, Time: 0.097)
+    - Trip 49: O8 -> C38 -> O8 (Type: Drone, Load: 5.00, Cost: 5.89, Time: 0.098)
+    - Trip 50: O8 -> C5 -> O8 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 51: O8 -> C16 -> O8 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 52: O8 -> C22 -> O8 (Type: Drone, Load: 5.00, Cost: 6.47, Time: 0.108)
+    - Trip 53: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 54: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 55: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 56: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 57: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 58: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 59: O8 -> C31 -> C17 -> O8 (Type: Vehicle, Load: 100.00, Cost: 11.81, Time: 0.148)
+    - Trip 60: O8 -> C17 -> O8 (Type: Drone, Load: 5.00, Cost: 5.66, Time: 0.094)
+    - Trip 61: O8 -> C3 -> O8 (Type: Drone, Load: 5.00, Cost: 5.67, Time: 0.095)
+    - Trip 62: O8 -> C2 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 63: O8 -> C24 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 64: O8 -> C7 -> O8 (Type: Drone, Load: 5.00, Cost: 5.80, Time: 0.097)
+    - Trip 65: O8 -> C38 -> O8 (Type: Drone, Load: 5.00, Cost: 5.89, Time: 0.098)
+    - Trip 66: O8 -> C5 -> O8 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 67: O8 -> C16 -> O8 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 68: O8 -> C22 -> O8 (Type: Drone, Load: 5.00, Cost: 6.47, Time: 0.108)
+    - Trip 69: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 70: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 71: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 72: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 73: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 74: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 75: O8 -> C17 -> C3 -> C2 -> O8 (Type: Vehicle, Load: 100.00, Cost: 11.36, Time: 0.142)
+    - Trip 76: O8 -> C2 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 77: O8 -> C24 -> O8 (Type: Drone, Load: 5.00, Cost: 5.68, Time: 0.095)
+    - Trip 78: O8 -> C7 -> O8 (Type: Drone, Load: 5.00, Cost: 5.80, Time: 0.097)
+    - Trip 79: O8 -> C38 -> O8 (Type: Drone, Load: 5.00, Cost: 5.89, Time: 0.098)
+    - Trip 80: O8 -> C5 -> O8 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 81: O8 -> C16 -> O8 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 82: O8 -> C22 -> O8 (Type: Drone, Load: 5.00, Cost: 6.47, Time: 0.108)
+    - Trip 83: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 84: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 85: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 86: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 87: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 88: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 89: O8 -> C2 -> C24 -> C7 -> C38 -> C5 -> O8 (Type: Vehicle, Load: 100.00, Cost: 23.59, Time: 0.295)
+    - Trip 90: O8 -> C5 -> O8 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 91: O8 -> C16 -> O8 (Type: Drone, Load: 5.00, Cost: 6.41, Time: 0.107)
+    - Trip 92: O8 -> C22 -> O8 (Type: Drone, Load: 5.00, Cost: 6.47, Time: 0.108)
+    - Trip 93: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 94: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 95: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 96: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 97: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 98: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 99: O8 -> C5 -> C16 -> C22 -> C34 -> O8 (Type: Vehicle, Load: 100.00, Cost: 26.07, Time: 0.326)
+    - Trip 100: O8 -> C34 -> O8 (Type: Drone, Load: 5.00, Cost: 6.59, Time: 0.110)
+    - Trip 101: O8 -> C0 -> O8 (Type: Drone, Load: 5.00, Cost: 6.62, Time: 0.110)
+    - Trip 102: O8 -> C29 -> O8 (Type: Drone, Load: 5.00, Cost: 6.91, Time: 0.115)
+    - Trip 103: O8 -> C30 -> O8 (Type: Drone, Load: 5.00, Cost: 7.71, Time: 0.128)
+    - Trip 104: O8 -> C15 -> O8 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.140)
+    - Trip 105: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 106: O8 -> C34 -> C0 -> C29 -> C30 -> C15 -> C46 -> O8 (Type: Vehicle, Load: 100.00, Cost: 25.16, Time: 0.314)
+    - Trip 107: O8 -> C46 -> O8 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 108: O8 -> C46 -> O8 (Type: Vehicle, Load: 59.25, Cost: 19.12, Time: 0.239)
+
+  Outlet 9 (39.8625, 116.5026):
+    - Trip 1: O9 -> C32 -> O9 (Type: Vehicle, Load: 61.74, Cost: 18.36, Time: 0.229)
+
+--- Customer Demand Fulfillment Status ---
+
+  Total Customers: 50
+    Fully Served:   50 (100.0%)
+    Partially Served: 0 (0.0%)
+    Unserved:       0 (0.0%)
+  Total Initial Demand: 3108.25
+  Total Remaining Demand: 0.0000
+
+  --- Detailed Status ---
+  CustIdx | Initial Demand | Final Remaining | Status
+  --------|----------------|-----------------|--------
+  0       |          49.37 |          0.0000 | Served
+  1       |          96.60 |          0.0000 | Served
+  2       |          91.92 |          0.0000 | Served
+  3       |          50.58 |          0.0000 | Served
+  4       |          33.20 |          0.0000 | Served
+  5       |          37.92 |          0.0000 | Served
+  6       |          31.14 |          0.0000 | Served
+  7       |          45.74 |          0.0000 | Served
+  8       |          53.91 |          0.0000 | Served
+  9       |          25.87 |          0.0000 | Served
+  10      |          58.52 |          0.0000 | Served
+  11      |          29.51 |          0.0000 | Served
+  12      |          86.35 |          0.0000 | Served
+  13      |          58.84 |          0.0000 | Served
+  14      |          84.08 |          0.0000 | Served
+  15      |          77.91 |          0.0000 | Served
+  16      |          69.45 |          0.0000 | Served
+  17      |          85.07 |          0.0000 | Served
+  18      |          65.88 |          0.0000 | Served
+  19      |          80.44 |          0.0000 | Served
+  20      |          98.71 |          0.0000 | Served
+  21      |          98.12 |          0.0000 | Served
+  22      |          42.43 |          0.0000 | Served
+  23      |          98.23 |          0.0000 | Served
+  24      |          33.77 |          0.0000 | Served
+  25      |          42.59 |          0.0000 | Served
+  26      |          78.56 |          0.0000 | Served
+  27      |          33.69 |          0.0000 | Served
+  28      |          61.34 |          0.0000 | Served
+  29      |          41.54 |          0.0000 | Served
+  30      |          41.77 |          0.0000 | Served
+  31      |          74.56 |          0.0000 | Served
+  32      |          61.74 |          0.0000 | Served
+  33      |          32.47 |          0.0000 | Served
+  34      |          69.14 |          0.0000 | Served
+  35      |          45.35 |          0.0000 | Served
+  36      |          74.44 |          0.0000 | Served
+  37      |          88.67 |          0.0000 | Served
+  38      |          36.92 |          0.0000 | Served
+  39      |          67.39 |          0.0000 | Served
+  40      |          70.62 |          0.0000 | Served
+  41      |          52.35 |          0.0000 | Served
+  42      |          89.79 |          0.0000 | Served
+  43      |          59.73 |          0.0000 | Served
+  44      |          70.28 |          0.0000 | Served
+  45      |          42.81 |          0.0000 | Served
+  46      |          96.16 |          0.0000 | Served
+  47      |          68.93 |          0.0000 | Served
+  48      |          90.59 |          0.0000 | Served
+  49      |          33.28 |          0.0000 | Served
+
+
+--- Parameters Used ---
+  Algorithm Parameter data not available or invalid type (<class 'dict'>).
+
+Report generated on: 2025-05-07 14:54:31
+Report generation time: 0.007 seconds.
+======================================================================
+--- End of Report: Greedy Heuristic ---
+======================================================================

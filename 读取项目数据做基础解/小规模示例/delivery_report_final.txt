@@ -1,0 +1,480 @@
+--- Logistics Optimization Report ---
+
+1. Point Information:
+  Logistics Centers:
+    - Logistics Center 1: Lat=39.811931, Lon=116.390981
+    - Logistics Center 2: Lat=39.949859, Lon=116.418212
+
+  Sales Outlets:
+    - Sales Outlet 1: Lat=39.873787, Lon=116.484406
+    - Sales Outlet 2: Lat=39.859103, Lon=116.371964
+    - Sales Outlet 3: Lat=39.841983, Lon=116.378144
+    - Sales Outlet 4: Lat=39.942532, Lon=116.415298
+    - Sales Outlet 5: Lat=39.950608, Lon=116.395217
+    - Sales Outlet 6: Lat=39.854101, Lon=116.500821
+    - Sales Outlet 7: Lat=39.928774, Lon=116.567935
+    - Sales Outlet 8: Lat=39.963495, Lon=116.375061
+    - Sales Outlet 9: Lat=39.911877, Lon=116.375683
+    - Sales Outlet 10: Lat=39.862491, Lon=116.502554
+
+  Customers:
+    - Customer 1: Lat=39.892782, Lon=116.405452, Demand=49.37 kg
+    - Customer 2: Lat=39.936793, Lon=116.255801, Demand=96.60 kg
+    - Customer 3: Lat=39.904166, Lon=116.407410, Demand=91.92 kg
+    - Customer 4: Lat=39.904202, Lon=116.407400, Demand=50.58 kg
+    - Customer 5: Lat=39.902623, Lon=116.397321, Demand=33.20 kg
+    - Customer 6: Lat=39.895431, Lon=116.345226, Demand=37.92 kg
+    - Customer 7: Lat=39.911800, Lon=116.429430, Demand=31.14 kg
+    - Customer 8: Lat=39.903153, Lon=116.407736, Demand=45.74 kg
+    - Customer 9: Lat=39.964270, Lon=116.357835, Demand=53.91 kg
+    - Customer 10: Lat=39.874152, Lon=116.417181, Demand=25.87 kg
+    - Customer 11: Lat=39.905324, Lon=116.438351, Demand=58.52 kg
+    - Customer 12: Lat=39.820204, Lon=116.450687, Demand=29.51 kg
+    - Customer 13: Lat=39.925468, Lon=116.360976, Demand=86.35 kg
+    - Customer 14: Lat=39.907112, Lon=116.405411, Demand=58.84 kg
+    - Customer 15: Lat=39.874589, Lon=116.384805, Demand=84.08 kg
+    - Customer 16: Lat=39.898824, Lon=116.422072, Demand=77.91 kg
+    - Customer 17: Lat=39.901082, Lon=116.410539, Demand=69.45 kg
+    - Customer 18: Lat=39.904203, Lon=116.407313, Demand=85.07 kg
+    - Customer 19: Lat=39.923214, Lon=116.420947, Demand=65.88 kg
+    - Customer 20: Lat=39.884973, Lon=116.437399, Demand=80.44 kg
+    - Customer 21: Lat=39.981906, Lon=116.339951, Demand=98.71 kg
+    - Customer 22: Lat=39.889401, Lon=116.377096, Demand=98.12 kg
+    - Customer 23: Lat=39.905490, Lon=116.412710, Demand=42.43 kg
+    - Customer 24: Lat=39.845835, Lon=116.312139, Demand=98.23 kg
+    - Customer 25: Lat=39.904222, Lon=116.407475, Demand=33.77 kg
+    - Customer 26: Lat=39.914529, Lon=116.381395, Demand=42.59 kg
+    - Customer 27: Lat=39.830246, Lon=116.462906, Demand=78.56 kg
+    - Customer 28: Lat=39.922933, Lon=116.437301, Demand=33.69 kg
+    - Customer 29: Lat=39.968153, Lon=116.422718, Demand=61.34 kg
+    - Customer 30: Lat=39.900143, Lon=116.413189, Demand=41.54 kg
+    - Customer 31: Lat=39.900170, Lon=116.418214, Demand=41.77 kg
+    - Customer 32: Lat=39.907439, Lon=116.406974, Demand=74.56 kg
+    - Customer 33: Lat=39.898106, Lon=116.529730, Demand=61.74 kg
+    - Customer 34: Lat=39.917885, Lon=116.428991, Demand=32.47 kg
+    - Customer 35: Lat=39.909214, Lon=116.414151, Demand=69.14 kg
+    - Customer 36: Lat=39.881184, Lon=116.393564, Demand=45.35 kg
+    - Customer 37: Lat=39.954429, Lon=116.557033, Demand=74.44 kg
+    - Customer 38: Lat=39.956109, Lon=116.327728, Demand=88.67 kg
+    - Customer 39: Lat=39.904214, Lon=116.408731, Demand=36.92 kg
+    - Customer 40: Lat=40.021923, Lon=116.453114, Demand=67.39 kg
+    - Customer 41: Lat=39.873374, Lon=116.465950, Demand=70.62 kg
+    - Customer 42: Lat=39.826822, Lon=116.387665, Demand=52.35 kg
+    - Customer 43: Lat=39.932801, Lon=116.515327, Demand=89.79 kg
+    - Customer 44: Lat=39.845803, Lon=116.381776, Demand=59.73 kg
+    - Customer 45: Lat=39.975196, Lon=116.481305, Demand=70.28 kg
+    - Customer 46: Lat=39.874950, Lon=116.373540, Demand=42.81 kg
+    - Customer 47: Lat=39.893579, Lon=116.426403, Demand=96.16 kg
+    - Customer 48: Lat=39.941272, Lon=116.385123, Demand=68.93 kg
+    - Customer 49: Lat=39.870377, Lon=116.269072, Demand=90.59 kg
+    - Customer 50: Lat=39.970537, Lon=116.461845, Demand=33.28 kg
+
+
+2. Delivery Route Information:
+
+  Vehicle ID: V1
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 26 -> Customer 5 -> Customer 14 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 26: 42.59 kg
+      - Customer 5: 33.20 kg
+      - Customer 14: 24.21 kg
+    Total Load: 100.00 kg
+    Distance: 13.76 km
+    Time: 0.34 hours
+    Cost: 27.52 yuan
+
+  Vehicle ID: V2
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 13 -> Customer 6 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 13: 86.35 kg
+      - Customer 6: 13.65 kg
+    Total Load: 100.00 kg
+    Distance: 19.81 km
+    Time: 0.50 hours
+    Cost: 39.62 yuan
+
+  Vehicle ID: V3
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 22 -> Customer 1 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 22: 98.12 kg
+      - Customer 1: 1.88 kg
+    Total Load: 100.00 kg
+    Distance: 16.96 km
+    Time: 0.42 hours
+    Cost: 33.91 yuan
+
+  Vehicle ID: V4
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 14 -> Customer 32 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 14: 34.63 kg
+      - Customer 32: 65.37 kg
+    Total Load: 100.00 kg
+    Distance: 13.11 km
+    Time: 0.33 hours
+    Cost: 26.22 yuan
+
+  Vehicle ID: V5
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 32 -> Customer 25 -> Customer 4 -> Customer 3 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 32: 9.19 kg
+      - Customer 25: 33.77 kg
+      - Customer 4: 50.58 kg
+      - Customer 3: 6.45 kg
+    Total Load: 100.00 kg
+    Distance: 13.82 km
+    Time: 0.35 hours
+    Cost: 27.63 yuan
+
+  Vehicle ID: V6
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 18 -> Customer 3 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 18: 85.07 kg
+      - Customer 3: 14.93 kg
+    Total Load: 100.00 kg
+    Distance: 13.57 km
+    Time: 0.34 hours
+    Cost: 27.14 yuan
+
+  Vehicle ID: V7
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 3 -> Customer 39 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 3: 70.54 kg
+      - Customer 39: 29.46 kg
+    Total Load: 100.00 kg
+    Distance: 13.66 km
+    Time: 0.34 hours
+    Cost: 27.32 yuan
+
+  Vehicle ID: V8
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 8 -> Customer 39 -> Customer 23 -> Customer 35 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 8: 45.74 kg
+      - Customer 39: 7.46 kg
+      - Customer 23: 42.43 kg
+      - Customer 35: 4.37 kg
+    Total Load: 100.00 kg
+    Distance: 13.95 km
+    Time: 0.35 hours
+    Cost: 27.89 yuan
+
+  Vehicle ID: V9
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 6 -> Customer 1 -> Customer 17 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 6: 24.27 kg
+      - Customer 1: 47.48 kg
+      - Customer 17: 28.25 kg
+    Total Load: 100.00 kg
+    Distance: 20.37 km
+    Time: 0.51 hours
+    Cost: 40.75 yuan
+
+  Vehicle ID: V10
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 17 -> Customer 30 -> Customer 31 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 17: 41.20 kg
+      - Customer 30: 41.54 kg
+      - Customer 31: 17.26 kg
+    Total Load: 100.00 kg
+    Distance: 14.98 km
+    Time: 0.37 hours
+    Cost: 29.95 yuan
+
+  Vehicle ID: V11
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 35 -> Customer 31 -> Customer 16 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 35: 64.77 kg
+      - Customer 31: 24.51 kg
+      - Customer 16: 10.72 kg
+    Total Load: 100.00 kg
+    Distance: 15.97 km
+    Time: 0.40 hours
+    Cost: 31.94 yuan
+
+  Vehicle ID: V12
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 16 -> Customer 47 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 16: 67.19 kg
+      - Customer 47: 32.81 kg
+    Total Load: 100.00 kg
+    Distance: 16.77 km
+    Time: 0.42 hours
+    Cost: 33.54 yuan
+
+  Vehicle ID: V13
+    Route: Logistics Center 2 -> Sales Outlet 9 -> Customer 47 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 9
+    Customers Served & Quantity:
+      - Customer 47: 63.35 kg
+    Total Load: 63.35 kg
+    Distance: 16.64 km
+    Time: 0.42 hours
+    Cost: 33.29 yuan
+
+  Vehicle ID: V14
+    Route: Logistics Center 2 -> Sales Outlet 8 -> Customer 9 -> Customer 21 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 8
+    Customers Served & Quantity:
+      - Customer 9: 53.91 kg
+      - Customer 21: 46.09 kg
+    Total Load: 100.00 kg
+    Distance: 15.49 km
+    Time: 0.39 hours
+    Cost: 30.99 yuan
+
+  Vehicle ID: V15
+    Route: Logistics Center 2 -> Sales Outlet 8 -> Customer 21 -> Customer 38 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 8
+    Customers Served & Quantity:
+      - Customer 21: 52.62 kg
+      - Customer 38: 47.38 kg
+    Total Load: 100.00 kg
+    Distance: 18.40 km
+    Time: 0.46 hours
+    Cost: 36.80 yuan
+
+  Vehicle ID: V16
+    Route: Logistics Center 2 -> Sales Outlet 8 -> Customer 38 -> Customer 2 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 8
+    Customers Served & Quantity:
+      - Customer 38: 41.28 kg
+      - Customer 2: 58.72 kg
+    Total Load: 100.00 kg
+    Distance: 28.51 km
+    Time: 0.71 hours
+    Cost: 57.03 yuan
+
+  Vehicle ID: V17
+    Route: Logistics Center 2 -> Sales Outlet 8 -> Customer 40 -> Customer 2 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 8
+    Customers Served & Quantity:
+      - Customer 40: 67.39 kg
+      - Customer 2: 32.61 kg
+    Total Load: 100.00 kg
+    Distance: 46.49 km
+    Time: 1.16 hours
+    Cost: 92.98 yuan
+
+  Vehicle ID: V18
+    Route: Logistics Center 2 -> Sales Outlet 8 -> Customer 2 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 8
+    Customers Served & Quantity:
+      - Customer 2: 5.27 kg
+    Total Load: 5.27 kg
+    Distance: 28.49 km
+    Time: 0.71 hours
+    Cost: 56.98 yuan
+
+  Vehicle ID: V19
+    Route: Logistics Center 2 -> Sales Outlet 4 -> Customer 19 -> Customer 34 -> Customer 7 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 4
+    Customers Served & Quantity:
+      - Customer 19: 65.88 kg
+      - Customer 34: 32.47 kg
+      - Customer 7: 1.65 kg
+    Total Load: 100.00 kg
+    Distance: 8.98 km
+    Time: 0.22 hours
+    Cost: 17.95 yuan
+
+  Vehicle ID: V20
+    Route: Logistics Center 2 -> Sales Outlet 4 -> Customer 28 -> Customer 7 -> Customer 11 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 4
+    Customers Served & Quantity:
+      - Customer 28: 33.69 kg
+      - Customer 7: 29.49 kg
+      - Customer 11: 36.82 kg
+    Total Load: 100.00 kg
+    Distance: 11.42 km
+    Time: 0.29 hours
+    Cost: 22.85 yuan
+
+  Vehicle ID: V21
+    Route: Logistics Center 2 -> Sales Outlet 4 -> Customer 29 -> Customer 50 -> Customer 45 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 4
+    Customers Served & Quantity:
+      - Customer 29: 61.34 kg
+      - Customer 50: 33.28 kg
+      - Customer 45: 5.38 kg
+    Total Load: 100.00 kg
+    Distance: 14.92 km
+    Time: 0.37 hours
+    Cost: 29.85 yuan
+
+  Vehicle ID: V22
+    Route: Logistics Center 2 -> Sales Outlet 4 -> Customer 11 -> Customer 45 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 4
+    Customers Served & Quantity:
+      - Customer 11: 21.70 kg
+      - Customer 45: 64.90 kg
+    Total Load: 86.60 kg
+    Distance: 20.09 km
+    Time: 0.50 hours
+    Cost: 40.18 yuan
+
+  Vehicle ID: V23
+    Route: Logistics Center 1 -> Sales Outlet 2 -> Customer 46 -> Customer 15 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 2
+    Customers Served & Quantity:
+      - Customer 46: 42.81 kg
+      - Customer 15: 57.19 kg
+    Total Load: 100.00 kg
+    Distance: 15.21 km
+    Time: 0.38 hours
+    Cost: 30.41 yuan
+
+  Vehicle ID: V24
+    Route: Logistics Center 1 -> Sales Outlet 2 -> Customer 15 -> Customer 36 -> Customer 10 -> Customer 24 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 2
+    Customers Served & Quantity:
+      - Customer 15: 26.89 kg
+      - Customer 36: 45.35 kg
+      - Customer 10: 25.87 kg
+      - Customer 24: 1.89 kg
+    Total Load: 100.00 kg
+    Distance: 27.96 km
+    Time: 0.70 hours
+    Cost: 55.92 yuan
+
+  Vehicle ID: V25
+    Route: Logistics Center 1 -> Sales Outlet 2 -> Customer 24 -> Customer 49 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 2
+    Customers Served & Quantity:
+      - Customer 24: 96.34 kg
+      - Customer 49: 3.66 kg
+    Total Load: 100.00 kg
+    Distance: 27.66 km
+    Time: 0.69 hours
+    Cost: 55.31 yuan
+
+  Vehicle ID: V26
+    Route: Logistics Center 1 -> Sales Outlet 2 -> Customer 49 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 2
+    Customers Served & Quantity:
+      - Customer 49: 86.93 kg
+    Total Load: 86.93 kg
+    Distance: 26.63 km
+    Time: 0.67 hours
+    Cost: 53.26 yuan
+
+  Vehicle ID: V27
+    Route: Logistics Center 1 -> Sales Outlet 6 -> Customer 27 -> Customer 12 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 6
+    Customers Served & Quantity:
+      - Customer 27: 78.56 kg
+      - Customer 12: 21.44 kg
+    Total Load: 100.00 kg
+    Distance: 21.38 km
+    Time: 0.53 hours
+    Cost: 42.76 yuan
+
+  Vehicle ID: V28
+    Route: Logistics Center 1 -> Sales Outlet 6 -> Customer 12 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 6
+    Customers Served & Quantity:
+      - Customer 12: 8.07 kg
+    Total Load: 8.07 kg
+    Distance: 21.37 km
+    Time: 0.53 hours
+    Cost: 42.74 yuan
+
+  Vehicle ID: V29
+    Route: Logistics Center 2 -> Sales Outlet 1 -> Customer 41 -> Customer 20 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 1
+    Customers Served & Quantity:
+      - Customer 41: 70.62 kg
+      - Customer 20: 29.38 kg
+    Total Load: 100.00 kg
+    Distance: 21.90 km
+    Time: 0.55 hours
+    Cost: 43.80 yuan
+
+  Vehicle ID: V30
+    Route: Logistics Center 2 -> Sales Outlet 1 -> Customer 20 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 1
+    Customers Served & Quantity:
+      - Customer 20: 51.06 kg
+    Total Load: 51.06 kg
+    Distance: 21.77 km
+    Time: 0.54 hours
+    Cost: 43.54 yuan
+
+  Vehicle ID: V31
+    Route: Logistics Center 1 -> Sales Outlet 10 -> Customer 33 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 10
+    Customers Served & Quantity:
+      - Customer 33: 61.74 kg
+    Total Load: 61.74 kg
+    Distance: 30.89 km
+    Time: 0.77 hours
+    Cost: 61.77 yuan
+
+  Vehicle ID: V32
+    Route: Logistics Center 2 -> Sales Outlet 7 -> Customer 37 -> Customer 43 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 7
+    Customers Served & Quantity:
+      - Customer 37: 74.44 kg
+      - Customer 43: 25.56 kg
+    Total Load: 100.00 kg
+    Distance: 28.76 km
+    Time: 0.72 hours
+    Cost: 57.53 yuan
+
+  Vehicle ID: V33
+    Route: Logistics Center 2 -> Sales Outlet 7 -> Customer 43 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 7
+    Customers Served & Quantity:
+      - Customer 43: 64.23 kg
+    Total Load: 64.23 kg
+    Distance: 25.98 km
+    Time: 0.65 hours
+    Cost: 51.96 yuan
+
+  Vehicle ID: V34
+    Route: Logistics Center 1 -> Sales Outlet 3 -> Customer 44 -> Customer 42 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 3
+    Customers Served & Quantity:
+      - Customer 44: 59.73 kg
+      - Customer 42: 40.27 kg
+    Total Load: 100.00 kg
+    Distance: 7.89 km
+    Time: 0.20 hours
+    Cost: 15.78 yuan
+
+  Vehicle ID: V35
+    Route: Logistics Center 1 -> Sales Outlet 3 -> Customer 42 -> Logistics Center 1
+    Origin LC: Logistics Center 1, Serviced SO: Sales Outlet 3
+    Customers Served & Quantity:
+      - Customer 42: 12.08 kg
+    Total Load: 12.08 kg
+    Distance: 7.07 km
+    Time: 0.18 hours
+    Cost: 14.14 yuan
+
+  Vehicle ID: V36
+    Route: Logistics Center 2 -> Sales Outlet 5 -> Customer 48 -> Logistics Center 2
+    Origin LC: Logistics Center 2, Serviced SO: Sales Outlet 5
+    Customers Served & Quantity:
+      - Customer 48: 68.93 kg
+    Total Load: 68.93 kg
+    Distance: 6.29 km
+    Time: 0.16 hours
+    Cost: 12.58 yuan
+
+
+3. Summary:
+  Total Vehicles Used: 36
+  Total Distance Covered: 686.91 km
+  Total Time Taken: 17.17 hours
+  Total Operational Cost: 1373.83 yuan

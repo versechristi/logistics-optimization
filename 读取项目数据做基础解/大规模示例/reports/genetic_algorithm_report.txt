@@ -1,0 +1,1045 @@
+======================================================================
+ Optimization Report: Genetic Algorithm
+======================================================================
+
+--- Overall Summary ---
+Feasibility Status: Feasible (All demand met)
+Final Weighted Cost:  4771.9396
+  Raw Transport Cost: 7952.13
+  Total Time (Makespan): 1.655 hrs
+  Final Unmet Demand: 0.0000
+Algorithm Runtime:    N/A seconds
+
+--- Stage 1 Routes (Depot -> Outlets -> Depot) ---
+
+  Depot 0 (39.8279, 116.4369):
+    - Route: D0 -> O6 -> O1 -> O14 -> O16 -> O10 -> O5 -> O15 -> D0
+
+  Depot 1 (40.0142, 116.4059):
+    - Route: D1 -> O9 -> O3 -> O11 -> O12 -> O2 -> O18 -> D1
+
+  Depot 2 (39.9804, 116.5390):
+    - Route: D2 -> O8 -> O4 -> O13 -> O19 -> O17 -> O0 -> O7 -> D2
+
+--- Stage 2 Trips (Outlet -> Customers -> Outlet) ---
+
+  Outlet 0 (39.9959, 116.4869):
+    - Trip 1: O0 -> C73 -> C80 -> O0 (Type: Vehicle, Load: 100.00, Cost: 9.22, Time: 0.115)
+    - Trip 2: O0 -> C80 -> O0 (Type: Drone, Load: 5.00, Cost: 3.73, Time: 0.062)
+    - Trip 3: O0 -> C80 -> O0 (Type: Vehicle, Load: 24.36, Cost: 7.46, Time: 0.093)
+
+  Outlet 1 (39.8081, 116.3673):
+    - Trip 1: O1 -> C2 -> C34 -> O1 (Type: Vehicle, Load: 100.00, Cost: 8.47, Time: 0.106)
+    - Trip 2: O1 -> C34 -> O1 (Type: Drone, Load: 5.00, Cost: 4.23, Time: 0.070)
+    - Trip 3: O1 -> C25 -> O1 (Type: Drone, Load: 5.00, Cost: 7.16, Time: 0.119)
+    - Trip 4: O1 -> C120 -> O1 (Type: Drone, Load: 5.00, Cost: 7.61, Time: 0.127)
+    - Trip 5: O1 -> C34 -> C25 -> O1 (Type: Vehicle, Load: 100.00, Cost: 21.44, Time: 0.268)
+    - Trip 6: O1 -> C120 -> O1 (Type: Drone, Load: 5.00, Cost: 7.61, Time: 0.127)
+    - Trip 7: O1 -> C120 -> O1 (Type: Vehicle, Load: 85.55, Cost: 15.22, Time: 0.190)
+
+  Outlet 2 (39.9891, 116.4456):
+    - Trip 1: O2 -> C125 -> C7 -> O2 (Type: Vehicle, Load: 100.00, Cost: 13.95, Time: 0.174)
+    - Trip 2: O2 -> C7 -> O2 (Type: Drone, Load: 5.00, Cost: 4.99, Time: 0.083)
+    - Trip 3: O2 -> C7 -> O2 (Type: Vehicle, Load: 35.09, Cost: 9.97, Time: 0.125)
+
+  Outlet 3 (39.9833, 116.2646):
+    - Trip 1: O3 -> C103 -> O3 (Type: Vehicle, Load: 100.00, Cost: 12.33, Time: 0.154)
+    - Trip 2: O3 -> C103 -> O3 (Type: Drone, Load: 5.00, Cost: 6.16, Time: 0.103)
+    - Trip 3: O3 -> C132 -> O3 (Type: Drone, Load: 5.00, Cost: 6.74, Time: 0.112)
+    - Trip 4: O3 -> C99 -> O3 (Type: Drone, Load: 5.00, Cost: 9.91, Time: 0.165)
+    - Trip 5: O3 -> C103 -> C132 -> O3 (Type: Vehicle, Load: 100.00, Cost: 20.71, Time: 0.259)
+    - Trip 6: O3 -> C132 -> O3 (Type: Drone, Load: 5.00, Cost: 6.74, Time: 0.112)
+    - Trip 7: O3 -> C99 -> O3 (Type: Drone, Load: 5.00, Cost: 9.91, Time: 0.165)
+    - Trip 8: O3 -> C132 -> C99 -> O3 (Type: Vehicle, Load: 100.00, Cost: 20.42, Time: 0.255)
+    - Trip 9: O3 -> C99 -> O3 (Type: Drone, Load: 5.00, Cost: 9.91, Time: 0.165)
+    - Trip 10: O3 -> C99 -> C58 -> C147 -> O3 (Type: Vehicle, Load: 100.00, Cost: 32.06, Time: 0.401)
+    - Trip 11: O3 -> C147 -> C111 -> O3 (Type: Vehicle, Load: 100.00, Cost: 31.70, Time: 0.396)
+    - Trip 12: O3 -> C111 -> O3 (Type: Vehicle, Load: 33.12, Cost: 26.75, Time: 0.334)
+
+  Outlet 4 (39.9635, 116.5417):
+    - No trips assigned or invalid data type (<class 'list'>).
+
+  Outlet 5 (39.8581, 116.3241):
+    - Trip 1: O5 -> C56 -> C93 -> O5 (Type: Vehicle, Load: 100.00, Cost: 14.67, Time: 0.183)
+    - Trip 2: O5 -> C93 -> O5 (Type: Drone, Load: 5.00, Cost: 4.89, Time: 0.082)
+    - Trip 3: O5 -> C93 -> O5 (Type: Vehicle, Load: 15.43, Cost: 9.79, Time: 0.122)
+
+  Outlet 6 (39.8219, 116.4699):
+    - Trip 1: O6 -> C142 -> C124 -> C97 -> O6 (Type: Vehicle, Load: 100.00, Cost: 11.58, Time: 0.145)
+    - Trip 2: O6 -> C97 -> O6 (Type: Drone, Load: 5.00, Cost: 4.65, Time: 0.077)
+    - Trip 3: O6 -> C50 -> O6 (Type: Drone, Load: 5.00, Cost: 6.63, Time: 0.111)
+    - Trip 4: O6 -> C137 -> O6 (Type: Drone, Load: 5.00, Cost: 7.28, Time: 0.121)
+    - Trip 5: O6 -> C23 -> O6 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 6: O6 -> C78 -> O6 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 7: O6 -> C59 -> O6 (Type: Drone, Load: 5.00, Cost: 9.76, Time: 0.163)
+    - Trip 8: O6 -> C97 -> C50 -> O6 (Type: Vehicle, Load: 100.00, Cost: 20.48, Time: 0.256)
+    - Trip 9: O6 -> C50 -> O6 (Type: Drone, Load: 5.00, Cost: 6.63, Time: 0.111)
+    - Trip 10: O6 -> C137 -> O6 (Type: Drone, Load: 5.00, Cost: 7.28, Time: 0.121)
+    - Trip 11: O6 -> C23 -> O6 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 12: O6 -> C78 -> O6 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 13: O6 -> C59 -> O6 (Type: Drone, Load: 5.00, Cost: 9.76, Time: 0.163)
+    - Trip 14: O6 -> C50 -> C137 -> O6 (Type: Vehicle, Load: 100.00, Cost: 16.51, Time: 0.206)
+    - Trip 15: O6 -> C137 -> O6 (Type: Drone, Load: 5.00, Cost: 7.28, Time: 0.121)
+    - Trip 16: O6 -> C23 -> O6 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 17: O6 -> C78 -> O6 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 18: O6 -> C59 -> O6 (Type: Drone, Load: 5.00, Cost: 9.76, Time: 0.163)
+    - Trip 19: O6 -> C137 -> C23 -> O6 (Type: Vehicle, Load: 100.00, Cost: 23.82, Time: 0.298)
+    - Trip 20: O6 -> C23 -> O6 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 21: O6 -> C78 -> O6 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 22: O6 -> C59 -> O6 (Type: Drone, Load: 5.00, Cost: 9.76, Time: 0.163)
+    - Trip 23: O6 -> C23 -> C78 -> O6 (Type: Vehicle, Load: 100.00, Cost: 21.96, Time: 0.274)
+    - Trip 24: O6 -> C78 -> O6 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 25: O6 -> C59 -> O6 (Type: Drone, Load: 5.00, Cost: 9.76, Time: 0.163)
+    - Trip 26: O6 -> C78 -> C59 -> C138 -> O6 (Type: Vehicle, Load: 100.00, Cost: 31.52, Time: 0.394)
+    - Trip 27: O6 -> C138 -> C62 -> O6 (Type: Vehicle, Load: 100.00, Cost: 26.06, Time: 0.326)
+    - Trip 28: O6 -> C62 -> C15 -> O6 (Type: Vehicle, Load: 100.00, Cost: 28.69, Time: 0.359)
+    - Trip 29: O6 -> C15 -> O6 (Type: Vehicle, Load: 42.11, Cost: 26.36, Time: 0.329)
+
+  Outlet 7 (39.9948, 116.5137):
+    - No trips assigned or invalid data type (<class 'list'>).
+
+  Outlet 8 (39.9674, 116.5572):
+    - No trips assigned or invalid data type (<class 'list'>).
+
+  Outlet 9 (39.9821, 116.3662):
+    - Trip 1: O9 -> C38 -> C133 -> O9 (Type: Vehicle, Load: 100.00, Cost: 21.31, Time: 0.266)
+    - Trip 2: O9 -> C133 -> O9 (Type: Drone, Load: 2.35, Cost: 7.57, Time: 0.126)
+    - Trip 3: O9 -> C17 -> O9 (Type: Vehicle, Load: 45.31, Cost: 20.26, Time: 0.253)
+
+  Outlet 10 (39.8449, 116.3283):
+    - Trip 1: O10 -> C32 -> O10 (Type: Vehicle, Load: 77.40, Cost: 13.95, Time: 0.174)
+
+  Outlet 11 (39.9253, 116.3623):
+    - Trip 1: O11 -> C123 -> C52 -> O11 (Type: Vehicle, Load: 100.00, Cost: 7.03, Time: 0.088)
+    - Trip 2: O11 -> C52 -> O11 (Type: Drone, Load: 5.00, Cost: 3.44, Time: 0.057)
+    - Trip 3: O11 -> C98 -> O11 (Type: Drone, Load: 5.00, Cost: 3.68, Time: 0.061)
+    - Trip 4: O11 -> C51 -> O11 (Type: Drone, Load: 5.00, Cost: 4.04, Time: 0.067)
+    - Trip 5: O11 -> C126 -> O11 (Type: Drone, Load: 5.00, Cost: 4.12, Time: 0.069)
+    - Trip 6: O11 -> C26 -> O11 (Type: Drone, Load: 5.00, Cost: 4.66, Time: 0.078)
+    - Trip 7: O11 -> C130 -> O11 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 8: O11 -> C63 -> O11 (Type: Drone, Load: 5.00, Cost: 5.35, Time: 0.089)
+    - Trip 9: O11 -> C135 -> O11 (Type: Drone, Load: 5.00, Cost: 5.75, Time: 0.096)
+    - Trip 10: O11 -> C41 -> O11 (Type: Drone, Load: 5.00, Cost: 6.84, Time: 0.114)
+    - Trip 11: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 12: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 13: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 14: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 15: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 16: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 17: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 18: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 19: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 20: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 21: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 22: O11 -> C52 -> C98 -> O11 (Type: Vehicle, Load: 100.00, Cost: 13.23, Time: 0.165)
+    - Trip 23: O11 -> C98 -> O11 (Type: Drone, Load: 0.75, Cost: 3.68, Time: 0.061)
+    - Trip 24: O11 -> C51 -> O11 (Type: Drone, Load: 5.00, Cost: 4.04, Time: 0.067)
+    - Trip 25: O11 -> C126 -> O11 (Type: Drone, Load: 5.00, Cost: 4.12, Time: 0.069)
+    - Trip 26: O11 -> C26 -> O11 (Type: Drone, Load: 5.00, Cost: 4.66, Time: 0.078)
+    - Trip 27: O11 -> C130 -> O11 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 28: O11 -> C63 -> O11 (Type: Drone, Load: 5.00, Cost: 5.35, Time: 0.089)
+    - Trip 29: O11 -> C135 -> O11 (Type: Drone, Load: 5.00, Cost: 5.75, Time: 0.096)
+    - Trip 30: O11 -> C41 -> O11 (Type: Drone, Load: 5.00, Cost: 6.84, Time: 0.114)
+    - Trip 31: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 32: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 33: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 34: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 35: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 36: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 37: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 38: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 39: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 40: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 41: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 42: O11 -> C51 -> C126 -> O11 (Type: Vehicle, Load: 100.00, Cost: 16.30, Time: 0.204)
+    - Trip 43: O11 -> C126 -> O11 (Type: Drone, Load: 5.00, Cost: 4.12, Time: 0.069)
+    - Trip 44: O11 -> C26 -> O11 (Type: Drone, Load: 5.00, Cost: 4.66, Time: 0.078)
+    - Trip 45: O11 -> C130 -> O11 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 46: O11 -> C63 -> O11 (Type: Drone, Load: 5.00, Cost: 5.35, Time: 0.089)
+    - Trip 47: O11 -> C135 -> O11 (Type: Drone, Load: 5.00, Cost: 5.75, Time: 0.096)
+    - Trip 48: O11 -> C41 -> O11 (Type: Drone, Load: 5.00, Cost: 6.84, Time: 0.114)
+    - Trip 49: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 50: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 51: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 52: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 53: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 54: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 55: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 56: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 57: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 58: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 59: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 60: O11 -> C126 -> C26 -> O11 (Type: Vehicle, Load: 100.00, Cost: 10.33, Time: 0.129)
+    - Trip 61: O11 -> C26 -> O11 (Type: Drone, Load: 0.34, Cost: 4.66, Time: 0.078)
+    - Trip 62: O11 -> C130 -> O11 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 63: O11 -> C63 -> O11 (Type: Drone, Load: 5.00, Cost: 5.35, Time: 0.089)
+    - Trip 64: O11 -> C135 -> O11 (Type: Drone, Load: 5.00, Cost: 5.75, Time: 0.096)
+    - Trip 65: O11 -> C41 -> O11 (Type: Drone, Load: 5.00, Cost: 6.84, Time: 0.114)
+    - Trip 66: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 67: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 68: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 69: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 70: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 71: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 72: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 73: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 74: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 75: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 76: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 77: O11 -> C130 -> O11 (Type: Vehicle, Load: 100.00, Cost: 9.35, Time: 0.117)
+    - Trip 78: O11 -> C130 -> O11 (Type: Drone, Load: 0.97, Cost: 4.67, Time: 0.078)
+    - Trip 79: O11 -> C63 -> O11 (Type: Drone, Load: 5.00, Cost: 5.35, Time: 0.089)
+    - Trip 80: O11 -> C135 -> O11 (Type: Drone, Load: 5.00, Cost: 5.75, Time: 0.096)
+    - Trip 81: O11 -> C41 -> O11 (Type: Drone, Load: 5.00, Cost: 6.84, Time: 0.114)
+    - Trip 82: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 83: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 84: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 85: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 86: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 87: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 88: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 89: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 90: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 91: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 92: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 93: O11 -> C63 -> C135 -> O11 (Type: Vehicle, Load: 100.00, Cost: 11.51, Time: 0.144)
+    - Trip 94: O11 -> C135 -> O11 (Type: Drone, Load: 5.00, Cost: 5.75, Time: 0.096)
+    - Trip 95: O11 -> C41 -> O11 (Type: Drone, Load: 5.00, Cost: 6.84, Time: 0.114)
+    - Trip 96: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 97: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 98: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 99: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 100: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 101: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 102: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 103: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 104: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 105: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 106: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 107: O11 -> C135 -> C41 -> O11 (Type: Vehicle, Load: 100.00, Cost: 15.28, Time: 0.191)
+    - Trip 108: O11 -> C94 -> O11 (Type: Drone, Load: 5.00, Cost: 7.36, Time: 0.123)
+    - Trip 109: O11 -> C88 -> O11 (Type: Drone, Load: 5.00, Cost: 7.99, Time: 0.133)
+    - Trip 110: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 111: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 112: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 113: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 114: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 115: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 116: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 117: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 118: O11 -> C79 -> O11 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 119: O11 -> C94 -> C88 -> C148 -> O11 (Type: Vehicle, Load: 100.00, Cost: 32.39, Time: 0.405)
+    - Trip 120: O11 -> C148 -> O11 (Type: Drone, Load: 5.00, Cost: 8.29, Time: 0.138)
+    - Trip 121: O11 -> C21 -> O11 (Type: Drone, Load: 5.00, Cost: 8.46, Time: 0.141)
+    - Trip 122: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 123: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 124: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 125: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 126: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 127: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 128: O11 -> C79 -> O11 (Type: Drone, Load: 3.35, Cost: 9.29, Time: 0.155)
+    - Trip 129: O11 -> C148 -> C21 -> C48 -> O11 (Type: Vehicle, Load: 100.00, Cost: 17.98, Time: 0.225)
+    - Trip 130: O11 -> C48 -> O11 (Type: Drone, Load: 5.00, Cost: 8.51, Time: 0.142)
+    - Trip 131: O11 -> C72 -> O11 (Type: Drone, Load: 5.00, Cost: 8.52, Time: 0.142)
+    - Trip 132: O11 -> C28 -> O11 (Type: Drone, Load: 5.00, Cost: 8.64, Time: 0.144)
+    - Trip 133: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 134: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 135: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 136: O11 -> C48 -> C72 -> C28 -> C46 -> O11 (Type: Vehicle, Load: 100.00, Cost: 18.70, Time: 0.234)
+    - Trip 137: O11 -> C46 -> O11 (Type: Drone, Load: 5.00, Cost: 8.77, Time: 0.146)
+    - Trip 138: O11 -> C20 -> O11 (Type: Drone, Load: 5.00, Cost: 8.89, Time: 0.148)
+    - Trip 139: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 140: O11 -> C46 -> C20 -> C118 -> O11 (Type: Vehicle, Load: 100.00, Cost: 18.22, Time: 0.228)
+    - Trip 141: O11 -> C118 -> O11 (Type: Drone, Load: 5.00, Cost: 9.07, Time: 0.151)
+    - Trip 142: O11 -> C118 -> C19 -> C5 -> O11 (Type: Vehicle, Load: 100.00, Cost: 45.79, Time: 0.572)
+    - Trip 143: O11 -> C5 -> O11 (Type: Vehicle, Load: 100.00, Cost: 25.21, Time: 0.315)
+    - Trip 144: O11 -> C5 -> O11 (Type: Vehicle, Load: 20.79, Cost: 25.21, Time: 0.315)
+
+  Outlet 12 (39.9459, 116.3880):
+    - Trip 1: O12 -> C95 -> C66 -> O12 (Type: Vehicle, Load: 100.00, Cost: 11.58, Time: 0.145)
+    - Trip 2: O12 -> C66 -> O12 (Type: Drone, Load: 5.00, Cost: 5.13, Time: 0.085)
+    - Trip 3: O12 -> C0 -> O12 (Type: Drone, Load: 5.00, Cost: 6.92, Time: 0.115)
+    - Trip 4: O12 -> C100 -> O12 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 5: O12 -> C113 -> O12 (Type: Drone, Load: 5.00, Cost: 7.97, Time: 0.133)
+    - Trip 6: O12 -> C61 -> O12 (Type: Drone, Load: 5.00, Cost: 7.98, Time: 0.133)
+    - Trip 7: O12 -> C92 -> O12 (Type: Drone, Load: 5.00, Cost: 8.20, Time: 0.137)
+    - Trip 8: O12 -> C12 -> O12 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 9: O12 -> C119 -> O12 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.138)
+    - Trip 10: O12 -> C74 -> O12 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.141)
+    - Trip 11: O12 -> C33 -> O12 (Type: Drone, Load: 5.00, Cost: 8.88, Time: 0.148)
+    - Trip 12: O12 -> C108 -> O12 (Type: Drone, Load: 5.00, Cost: 9.42, Time: 0.157)
+    - Trip 13: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 14: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 15: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 16: O12 -> C66 -> C0 -> C100 -> O12 (Type: Vehicle, Load: 100.00, Cost: 20.50, Time: 0.256)
+    - Trip 17: O12 -> C100 -> O12 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 18: O12 -> C113 -> O12 (Type: Drone, Load: 5.00, Cost: 7.97, Time: 0.133)
+    - Trip 19: O12 -> C61 -> O12 (Type: Drone, Load: 5.00, Cost: 7.98, Time: 0.133)
+    - Trip 20: O12 -> C92 -> O12 (Type: Drone, Load: 5.00, Cost: 8.20, Time: 0.137)
+    - Trip 21: O12 -> C12 -> O12 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 22: O12 -> C119 -> O12 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.138)
+    - Trip 23: O12 -> C74 -> O12 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.141)
+    - Trip 24: O12 -> C33 -> O12 (Type: Drone, Load: 5.00, Cost: 8.88, Time: 0.148)
+    - Trip 25: O12 -> C108 -> O12 (Type: Drone, Load: 5.00, Cost: 9.42, Time: 0.157)
+    - Trip 26: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 27: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 28: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 29: O12 -> C100 -> C113 -> O12 (Type: Vehicle, Load: 100.00, Cost: 23.22, Time: 0.290)
+    - Trip 30: O12 -> C113 -> O12 (Type: Drone, Load: 5.00, Cost: 7.97, Time: 0.133)
+    - Trip 31: O12 -> C61 -> O12 (Type: Drone, Load: 5.00, Cost: 7.98, Time: 0.133)
+    - Trip 32: O12 -> C92 -> O12 (Type: Drone, Load: 5.00, Cost: 8.20, Time: 0.137)
+    - Trip 33: O12 -> C12 -> O12 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 34: O12 -> C119 -> O12 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.138)
+    - Trip 35: O12 -> C74 -> O12 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.141)
+    - Trip 36: O12 -> C33 -> O12 (Type: Drone, Load: 5.00, Cost: 8.88, Time: 0.148)
+    - Trip 37: O12 -> C108 -> O12 (Type: Drone, Load: 5.00, Cost: 9.42, Time: 0.157)
+    - Trip 38: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 39: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 40: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 41: O12 -> C113 -> C61 -> O12 (Type: Vehicle, Load: 100.00, Cost: 24.95, Time: 0.312)
+    - Trip 42: O12 -> C92 -> O12 (Type: Drone, Load: 5.00, Cost: 8.20, Time: 0.137)
+    - Trip 43: O12 -> C12 -> O12 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 44: O12 -> C119 -> O12 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.138)
+    - Trip 45: O12 -> C74 -> O12 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.141)
+    - Trip 46: O12 -> C33 -> O12 (Type: Drone, Load: 5.00, Cost: 8.88, Time: 0.148)
+    - Trip 47: O12 -> C108 -> O12 (Type: Drone, Load: 5.00, Cost: 9.42, Time: 0.157)
+    - Trip 48: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 49: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 50: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 51: O12 -> C92 -> C12 -> O12 (Type: Vehicle, Load: 100.00, Cost: 18.03, Time: 0.225)
+    - Trip 52: O12 -> C12 -> O12 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 53: O12 -> C119 -> O12 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.138)
+    - Trip 54: O12 -> C74 -> O12 (Type: Drone, Load: 5.00, Cost: 8.43, Time: 0.141)
+    - Trip 55: O12 -> C33 -> O12 (Type: Drone, Load: 5.00, Cost: 8.88, Time: 0.148)
+    - Trip 56: O12 -> C108 -> O12 (Type: Drone, Load: 5.00, Cost: 9.42, Time: 0.157)
+    - Trip 57: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 58: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 59: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 60: O12 -> C12 -> C119 -> C74 -> C33 -> O12 (Type: Vehicle, Load: 100.00, Cost: 27.82, Time: 0.348)
+    - Trip 61: O12 -> C33 -> O12 (Type: Drone, Load: 5.00, Cost: 8.88, Time: 0.148)
+    - Trip 62: O12 -> C108 -> O12 (Type: Drone, Load: 5.00, Cost: 9.42, Time: 0.157)
+    - Trip 63: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 64: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 65: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 66: O12 -> C33 -> C108 -> O12 (Type: Vehicle, Load: 100.00, Cost: 20.55, Time: 0.257)
+    - Trip 67: O12 -> C16 -> O12 (Type: Drone, Load: 5.00, Cost: 9.56, Time: 0.159)
+    - Trip 68: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 69: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 70: O12 -> C16 -> C42 -> O12 (Type: Vehicle, Load: 100.00, Cost: 24.66, Time: 0.308)
+    - Trip 71: O12 -> C42 -> O12 (Type: Drone, Load: 5.00, Cost: 9.70, Time: 0.162)
+    - Trip 72: O12 -> C96 -> O12 (Type: Drone, Load: 5.00, Cost: 9.95, Time: 0.166)
+    - Trip 73: O12 -> C42 -> C96 -> C117 -> O12 (Type: Vehicle, Load: 100.00, Cost: 25.62, Time: 0.320)
+    - Trip 74: O12 -> C117 -> C1 -> C55 -> O12 (Type: Vehicle, Load: 100.00, Cost: 25.37, Time: 0.317)
+    - Trip 75: O12 -> C55 -> C121 -> O12 (Type: Vehicle, Load: 100.00, Cost: 24.14, Time: 0.302)
+    - Trip 76: O12 -> C121 -> O12 (Type: Vehicle, Load: 24.90, Cost: 22.43, Time: 0.280)
+
+  Outlet 13 (39.9152, 116.5389):
+    - No trips assigned or invalid data type (<class 'list'>).
+
+  Outlet 14 (39.7968, 116.3365):
+    - Trip 1: O14 -> C49 -> O14 (Type: Vehicle, Load: 100.00, Cost: 4.73, Time: 0.059)
+    - Trip 2: O14 -> C49 -> O14 (Type: Drone, Load: 5.00, Cost: 2.36, Time: 0.039)
+    - Trip 3: O14 -> C49 -> O14 (Type: Vehicle, Load: 8.20, Cost: 4.73, Time: 0.059)
+
+  Outlet 15 (39.8764, 116.3694):
+    - Trip 1: O15 -> C81 -> C3 -> O15 (Type: Vehicle, Load: 100.00, Cost: 5.03, Time: 0.063)
+    - Trip 2: O15 -> C3 -> O15 (Type: Drone, Load: 5.00, Cost: 2.51, Time: 0.042)
+    - Trip 3: O15 -> C13 -> O15 (Type: Drone, Load: 5.00, Cost: 3.73, Time: 0.062)
+    - Trip 4: O15 -> C68 -> O15 (Type: Drone, Load: 5.00, Cost: 4.15, Time: 0.069)
+    - Trip 5: O15 -> C106 -> O15 (Type: Drone, Load: 5.00, Cost: 4.33, Time: 0.072)
+    - Trip 6: O15 -> C87 -> O15 (Type: Drone, Load: 5.00, Cost: 4.37, Time: 0.073)
+    - Trip 7: O15 -> C75 -> O15 (Type: Drone, Load: 5.00, Cost: 4.44, Time: 0.074)
+    - Trip 8: O15 -> C127 -> O15 (Type: Drone, Load: 5.00, Cost: 4.60, Time: 0.077)
+    - Trip 9: O15 -> C47 -> O15 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 10: O15 -> C4 -> O15 (Type: Drone, Load: 5.00, Cost: 4.86, Time: 0.081)
+    - Trip 11: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 12: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 13: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 14: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 15: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 16: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 17: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 18: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 19: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 20: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 21: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 22: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 23: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 24: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 25: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 26: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 27: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 28: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 29: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 30: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 31: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 32: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 33: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 34: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 35: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 36: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 37: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 38: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 39: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 40: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 41: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 42: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 43: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 44: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 45: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 46: O15 -> C3 -> C13 -> O15 (Type: Vehicle, Load: 100.00, Cost: 10.13, Time: 0.127)
+    - Trip 47: O15 -> C13 -> O15 (Type: Drone, Load: 5.00, Cost: 3.73, Time: 0.062)
+    - Trip 48: O15 -> C68 -> O15 (Type: Drone, Load: 5.00, Cost: 4.15, Time: 0.069)
+    - Trip 49: O15 -> C106 -> O15 (Type: Drone, Load: 5.00, Cost: 4.33, Time: 0.072)
+    - Trip 50: O15 -> C87 -> O15 (Type: Drone, Load: 5.00, Cost: 4.37, Time: 0.073)
+    - Trip 51: O15 -> C75 -> O15 (Type: Drone, Load: 5.00, Cost: 4.44, Time: 0.074)
+    - Trip 52: O15 -> C127 -> O15 (Type: Drone, Load: 5.00, Cost: 4.60, Time: 0.077)
+    - Trip 53: O15 -> C47 -> O15 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 54: O15 -> C4 -> O15 (Type: Drone, Load: 5.00, Cost: 4.86, Time: 0.081)
+    - Trip 55: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 56: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 57: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 58: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 59: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 60: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 61: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 62: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 63: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 64: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 65: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 66: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 67: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 68: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 69: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 70: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 71: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 72: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 73: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 74: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 75: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 76: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 77: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 78: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 79: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 80: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 81: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 82: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 83: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 84: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 85: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 86: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 87: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 88: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 89: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 90: O15 -> C13 -> C68 -> C106 -> O15 (Type: Vehicle, Load: 100.00, Cost: 21.75, Time: 0.272)
+    - Trip 91: O15 -> C106 -> O15 (Type: Drone, Load: 5.00, Cost: 4.33, Time: 0.072)
+    - Trip 92: O15 -> C87 -> O15 (Type: Drone, Load: 5.00, Cost: 4.37, Time: 0.073)
+    - Trip 93: O15 -> C75 -> O15 (Type: Drone, Load: 5.00, Cost: 4.44, Time: 0.074)
+    - Trip 94: O15 -> C127 -> O15 (Type: Drone, Load: 5.00, Cost: 4.60, Time: 0.077)
+    - Trip 95: O15 -> C47 -> O15 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 96: O15 -> C4 -> O15 (Type: Drone, Load: 5.00, Cost: 4.86, Time: 0.081)
+    - Trip 97: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 98: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 99: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 100: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 101: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 102: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 103: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 104: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 105: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 106: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 107: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 108: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 109: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 110: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 111: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 112: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 113: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 114: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 115: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 116: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 117: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 118: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 119: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 120: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 121: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 122: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 123: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 124: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 125: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 126: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 127: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 128: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 129: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 130: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 131: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 132: O15 -> C106 -> C87 -> O15 (Type: Vehicle, Load: 100.00, Cost: 9.75, Time: 0.122)
+    - Trip 133: O15 -> C87 -> O15 (Type: Drone, Load: 5.00, Cost: 4.37, Time: 0.073)
+    - Trip 134: O15 -> C75 -> O15 (Type: Drone, Load: 5.00, Cost: 4.44, Time: 0.074)
+    - Trip 135: O15 -> C127 -> O15 (Type: Drone, Load: 5.00, Cost: 4.60, Time: 0.077)
+    - Trip 136: O15 -> C47 -> O15 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 137: O15 -> C4 -> O15 (Type: Drone, Load: 5.00, Cost: 4.86, Time: 0.081)
+    - Trip 138: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 139: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 140: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 141: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 142: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 143: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 144: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 145: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 146: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 147: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 148: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 149: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 150: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 151: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 152: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 153: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 154: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 155: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 156: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 157: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 158: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 159: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 160: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 161: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 162: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 163: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 164: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 165: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 166: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 167: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 168: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 169: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 170: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 171: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 172: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 173: O15 -> C87 -> C75 -> O15 (Type: Vehicle, Load: 100.00, Cost: 9.58, Time: 0.120)
+    - Trip 174: O15 -> C127 -> O15 (Type: Drone, Load: 5.00, Cost: 4.60, Time: 0.077)
+    - Trip 175: O15 -> C47 -> O15 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 176: O15 -> C4 -> O15 (Type: Drone, Load: 5.00, Cost: 4.86, Time: 0.081)
+    - Trip 177: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 178: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 179: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 180: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 181: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 182: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 183: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 184: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 185: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 186: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 187: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 188: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 189: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 190: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 191: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 192: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 193: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 194: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 195: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 196: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 197: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 198: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 199: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 200: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 201: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 202: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 203: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 204: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 205: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 206: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 207: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 208: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 209: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 210: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 211: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 212: O15 -> C127 -> C47 -> O15 (Type: Vehicle, Load: 100.00, Cost: 18.41, Time: 0.230)
+    - Trip 213: O15 -> C47 -> O15 (Type: Drone, Load: 5.00, Cost: 4.67, Time: 0.078)
+    - Trip 214: O15 -> C4 -> O15 (Type: Drone, Load: 5.00, Cost: 4.86, Time: 0.081)
+    - Trip 215: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 216: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 217: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 218: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 219: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 220: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 221: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 222: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 223: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 224: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 225: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 226: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 227: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 228: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 229: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 230: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 231: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 232: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 233: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 234: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 235: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 236: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 237: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 238: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 239: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 240: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 241: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 242: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 243: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 244: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 245: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 246: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 247: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 248: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 249: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 250: O15 -> C47 -> C4 -> O15 (Type: Vehicle, Load: 100.00, Cost: 18.70, Time: 0.234)
+    - Trip 251: O15 -> C146 -> O15 (Type: Drone, Load: 5.00, Cost: 5.59, Time: 0.093)
+    - Trip 252: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 253: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 254: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 255: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 256: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 257: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 258: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 259: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 260: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 261: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 262: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 263: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 264: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 265: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 266: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 267: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 268: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 269: O15 -> C43 -> O15 (Type: Drone, Load: 5.00, Cost: 8.95, Time: 0.149)
+    - Trip 270: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 271: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 272: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 273: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 274: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 275: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 276: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 277: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 278: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 279: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 280: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 281: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 282: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 283: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 284: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 285: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 286: O15 -> C146 -> C128 -> O15 (Type: Vehicle, Load: 100.00, Cost: 17.33, Time: 0.217)
+    - Trip 287: O15 -> C128 -> O15 (Type: Drone, Load: 5.00, Cost: 5.92, Time: 0.099)
+    - Trip 288: O15 -> C71 -> O15 (Type: Drone, Load: 5.00, Cost: 6.10, Time: 0.102)
+    - Trip 289: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 290: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 291: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 292: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 293: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 294: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 295: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 296: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 297: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 298: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 299: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 300: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 301: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 302: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 303: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 304: O15 -> C43 -> O15 (Type: Drone, Load: 2.84, Cost: 8.95, Time: 0.149)
+    - Trip 305: O15 -> C60 -> O15 (Type: Drone, Load: 5.00, Cost: 8.96, Time: 0.149)
+    - Trip 306: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 307: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 308: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 309: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 310: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 311: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 312: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 313: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 314: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 315: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 316: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 317: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 318: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 319: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 320: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 321: O15 -> C128 -> C71 -> C122 -> O15 (Type: Vehicle, Load: 100.00, Cost: 13.47, Time: 0.168)
+    - Trip 322: O15 -> C122 -> O15 (Type: Drone, Load: 5.00, Cost: 6.35, Time: 0.106)
+    - Trip 323: O15 -> C6 -> O15 (Type: Drone, Load: 5.00, Cost: 7.10, Time: 0.118)
+    - Trip 324: O15 -> C105 -> O15 (Type: Drone, Load: 5.00, Cost: 7.23, Time: 0.120)
+    - Trip 325: O15 -> C64 -> O15 (Type: Drone, Load: 5.00, Cost: 7.79, Time: 0.130)
+    - Trip 326: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 327: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 328: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 329: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 330: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 331: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 332: O15 -> C37 -> O15 (Type: Drone, Load: 5.00, Cost: 8.44, Time: 0.141)
+    - Trip 333: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 334: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 335: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 336: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 337: O15 -> C60 -> O15 (Type: Drone, Load: 0.91, Cost: 8.96, Time: 0.149)
+    - Trip 338: O15 -> C31 -> O15 (Type: Drone, Load: 5.00, Cost: 8.97, Time: 0.150)
+    - Trip 339: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 340: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 341: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 342: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 343: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 344: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 345: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 346: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 347: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 348: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 349: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 350: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 351: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 352: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 353: O15 -> C122 -> C6 -> C105 -> C64 -> C44 -> O15 (Type: Vehicle, Load: 100.00, Cost: 41.69, Time: 0.521)
+    - Trip 354: O15 -> C44 -> O15 (Type: Drone, Load: 5.00, Cost: 7.89, Time: 0.132)
+    - Trip 355: O15 -> C143 -> O15 (Type: Drone, Load: 5.00, Cost: 8.03, Time: 0.134)
+    - Trip 356: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 357: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 358: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 359: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 360: O15 -> C37 -> O15 (Type: Drone, Load: 2.65, Cost: 8.44, Time: 0.141)
+    - Trip 361: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 362: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 363: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 364: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 365: O15 -> C31 -> O15 (Type: Drone, Load: 2.91, Cost: 8.97, Time: 0.150)
+    - Trip 366: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 367: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 368: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 369: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 370: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 371: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 372: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 373: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 374: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 375: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 376: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 377: O15 -> C39 -> O15 (Type: Drone, Load: 5.00, Cost: 9.62, Time: 0.160)
+    - Trip 378: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 379: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 380: O15 -> C44 -> C143 -> C57 -> O15 (Type: Vehicle, Load: 100.00, Cost: 19.24, Time: 0.240)
+    - Trip 381: O15 -> C57 -> O15 (Type: Drone, Load: 5.00, Cost: 8.24, Time: 0.137)
+    - Trip 382: O15 -> C30 -> O15 (Type: Drone, Load: 5.00, Cost: 8.25, Time: 0.137)
+    - Trip 383: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 384: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 385: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 386: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 387: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 388: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 389: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 390: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 391: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 392: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 393: O15 -> C40 -> O15 (Type: Drone, Load: 5.00, Cost: 9.22, Time: 0.154)
+    - Trip 394: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 395: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 396: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 397: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 398: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 399: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 400: O15 -> C39 -> O15 (Type: Drone, Load: 0.43, Cost: 9.62, Time: 0.160)
+    - Trip 401: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 402: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 403: O15 -> C57 -> C30 -> C67 -> O15 (Type: Vehicle, Load: 100.00, Cost: 19.83, Time: 0.248)
+    - Trip 404: O15 -> C67 -> O15 (Type: Drone, Load: 5.00, Cost: 8.26, Time: 0.138)
+    - Trip 405: O15 -> C112 -> O15 (Type: Drone, Load: 5.00, Cost: 8.32, Time: 0.139)
+    - Trip 406: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 407: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 408: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 409: O15 -> C141 -> O15 (Type: Drone, Load: 5.00, Cost: 8.75, Time: 0.146)
+    - Trip 410: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 411: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 412: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 413: O15 -> C109 -> O15 (Type: Drone, Load: 5.00, Cost: 9.18, Time: 0.153)
+    - Trip 414: O15 -> C40 -> O15 (Type: Drone, Load: 2.86, Cost: 9.22, Time: 0.154)
+    - Trip 415: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 416: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 417: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 418: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 419: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 420: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 421: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 422: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 423: O15 -> C67 -> C112 -> C45 -> O15 (Type: Vehicle, Load: 100.00, Cost: 21.84, Time: 0.273)
+    - Trip 424: O15 -> C45 -> O15 (Type: Drone, Load: 5.00, Cost: 8.59, Time: 0.143)
+    - Trip 425: O15 -> C134 -> O15 (Type: Drone, Load: 5.00, Cost: 8.61, Time: 0.143)
+    - Trip 426: O15 -> C22 -> O15 (Type: Drone, Load: 5.00, Cost: 8.71, Time: 0.145)
+    - Trip 427: O15 -> C141 -> O15 (Type: Drone, Load: 2.50, Cost: 8.75, Time: 0.146)
+    - Trip 428: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 429: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 430: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 431: O15 -> C109 -> O15 (Type: Drone, Load: 3.94, Cost: 9.18, Time: 0.153)
+    - Trip 432: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 433: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 434: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 435: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 436: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 437: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 438: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 439: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 440: O15 -> C45 -> C134 -> C22 -> C86 -> O15 (Type: Vehicle, Load: 100.00, Cost: 19.69, Time: 0.246)
+    - Trip 441: O15 -> C86 -> O15 (Type: Drone, Load: 5.00, Cost: 8.98, Time: 0.150)
+    - Trip 442: O15 -> C102 -> O15 (Type: Drone, Load: 5.00, Cost: 9.00, Time: 0.150)
+    - Trip 443: O15 -> C104 -> O15 (Type: Drone, Load: 5.00, Cost: 9.06, Time: 0.151)
+    - Trip 444: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 445: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 446: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 447: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 448: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 449: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 450: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 451: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 452: O15 -> C86 -> C102 -> C104 -> C83 -> O15 (Type: Vehicle, Load: 100.00, Cost: 21.86, Time: 0.273)
+    - Trip 453: O15 -> C83 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 454: O15 -> C89 -> O15 (Type: Drone, Load: 5.00, Cost: 9.24, Time: 0.154)
+    - Trip 455: O15 -> C24 -> O15 (Type: Drone, Load: 5.00, Cost: 9.26, Time: 0.154)
+    - Trip 456: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 457: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 458: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 459: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 460: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 461: O15 -> C83 -> C89 -> C24 -> C77 -> O15 (Type: Vehicle, Load: 100.00, Cost: 31.16, Time: 0.389)
+    - Trip 462: O15 -> C77 -> O15 (Type: Drone, Load: 5.00, Cost: 9.29, Time: 0.155)
+    - Trip 463: O15 -> C70 -> O15 (Type: Drone, Load: 5.00, Cost: 9.45, Time: 0.157)
+    - Trip 464: O15 -> C140 -> O15 (Type: Drone, Load: 5.00, Cost: 9.46, Time: 0.158)
+    - Trip 465: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 466: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 467: O15 -> C77 -> C70 -> C140 -> C82 -> O15 (Type: Vehicle, Load: 100.00, Cost: 46.66, Time: 0.583)
+    - Trip 468: O15 -> C82 -> O15 (Type: Drone, Load: 5.00, Cost: 9.63, Time: 0.161)
+    - Trip 469: O15 -> C84 -> O15 (Type: Drone, Load: 5.00, Cost: 9.68, Time: 0.161)
+    - Trip 470: O15 -> C82 -> C84 -> C18 -> O15 (Type: Vehicle, Load: 100.00, Cost: 27.61, Time: 0.345)
+    - Trip 471: O15 -> C18 -> C76 -> O15 (Type: Vehicle, Load: 100.00, Cost: 30.78, Time: 0.385)
+    - Trip 472: O15 -> C76 -> C69 -> O15 (Type: Vehicle, Load: 100.00, Cost: 30.40, Time: 0.380)
+    - Trip 473: O15 -> C69 -> C101 -> O15 (Type: Vehicle, Load: 100.00, Cost: 26.57, Time: 0.332)
+    - Trip 474: O15 -> C101 -> C116 -> O15 (Type: Vehicle, Load: 100.00, Cost: 26.35, Time: 0.329)
+    - Trip 475: O15 -> C116 -> C14 -> O15 (Type: Vehicle, Load: 100.00, Cost: 22.26, Time: 0.278)
+    - Trip 476: O15 -> C14 -> C139 -> O15 (Type: Vehicle, Load: 100.00, Cost: 25.48, Time: 0.319)
+    - Trip 477: O15 -> C139 -> C131 -> O15 (Type: Vehicle, Load: 100.00, Cost: 23.75, Time: 0.297)
+    - Trip 478: O15 -> C131 -> C149 -> C8 -> O15 (Type: Vehicle, Load: 100.00, Cost: 31.44, Time: 0.393)
+    - Trip 479: O15 -> C8 -> C114 -> O15 (Type: Vehicle, Load: 100.00, Cost: 27.00, Time: 0.337)
+    - Trip 480: O15 -> C114 -> C65 -> C54 -> O15 (Type: Vehicle, Load: 100.00, Cost: 29.91, Time: 0.374)
+    - Trip 481: O15 -> C54 -> O15 (Type: Vehicle, Load: 85.04, Cost: 27.73, Time: 0.347)
+
+  Outlet 16 (39.8524, 116.2633):
+    - Trip 1: O16 -> C9 -> C144 -> O16 (Type: Vehicle, Load: 100.00, Cost: 17.83, Time: 0.223)
+    - Trip 2: O16 -> C144 -> O16 (Type: Drone, Load: 5.00, Cost: 5.20, Time: 0.087)
+    - Trip 3: O16 -> C91 -> O16 (Type: Drone, Load: 5.00, Cost: 6.21, Time: 0.104)
+    - Trip 4: O16 -> C129 -> O16 (Type: Drone, Load: 5.00, Cost: 9.58, Time: 0.160)
+    - Trip 5: O16 -> C144 -> C91 -> O16 (Type: Vehicle, Load: 100.00, Cost: 12.53, Time: 0.157)
+    - Trip 6: O16 -> C91 -> O16 (Type: Drone, Load: 4.33, Cost: 6.21, Time: 0.104)
+    - Trip 7: O16 -> C129 -> O16 (Type: Drone, Load: 5.00, Cost: 9.58, Time: 0.160)
+    - Trip 8: O16 -> C129 -> C107 -> O16 (Type: Vehicle, Load: 100.00, Cost: 28.30, Time: 0.354)
+    - Trip 9: O16 -> C107 -> C110 -> O16 (Type: Vehicle, Load: 100.00, Cost: 32.15, Time: 0.402)
+    - Trip 10: O16 -> C110 -> O16 (Type: Vehicle, Load: 85.05, Cost: 27.60, Time: 0.345)
+
+  Outlet 17 (39.9454, 116.5071):
+    - Trip 1: O17 -> C53 -> C11 -> O17 (Type: Vehicle, Load: 100.00, Cost: 17.08, Time: 0.214)
+    - Trip 2: O17 -> C11 -> O17 (Type: Drone, Load: 5.00, Cost: 6.77, Time: 0.113)
+    - Trip 3: O17 -> C11 -> O17 (Type: Vehicle, Load: 19.36, Cost: 13.54, Time: 0.169)
+
+  Outlet 18 (39.9949, 116.4328):
+    - Trip 1: O18 -> C27 -> O18 (Type: Vehicle, Load: 100.00, Cost: 4.87, Time: 0.061)
+    - Trip 2: O18 -> C27 -> O18 (Type: Drone, Load: 5.00, Cost: 2.44, Time: 0.041)
+    - Trip 3: O18 -> C90 -> O18 (Type: Drone, Load: 5.00, Cost: 2.77, Time: 0.046)
+    - Trip 4: O18 -> C85 -> O18 (Type: Drone, Load: 5.00, Cost: 4.65, Time: 0.078)
+    - Trip 5: O18 -> C27 -> C90 -> O18 (Type: Vehicle, Load: 100.00, Cost: 7.59, Time: 0.095)
+    - Trip 6: O18 -> C90 -> O18 (Type: Drone, Load: 5.00, Cost: 2.77, Time: 0.046)
+    - Trip 7: O18 -> C85 -> O18 (Type: Drone, Load: 5.00, Cost: 4.65, Time: 0.078)
+    - Trip 8: O18 -> C90 -> C85 -> O18 (Type: Vehicle, Load: 62.67, Cost: 13.79, Time: 0.172)
+
+  Outlet 19 (39.9358, 116.5033):
+    - Trip 1: O19 -> C115 -> O19 (Type: Vehicle, Load: 100.00, Cost: 7.22, Time: 0.090)
+    - Trip 2: O19 -> C115 -> O19 (Type: Drone, Load: 5.00, Cost: 3.61, Time: 0.060)
+    - Trip 3: O19 -> C145 -> O19 (Type: Drone, Load: 5.00, Cost: 7.84, Time: 0.131)
+    - Trip 4: O19 -> C35 -> O19 (Type: Drone, Load: 5.00, Cost: 9.16, Time: 0.153)
+    - Trip 5: O19 -> C136 -> O19 (Type: Drone, Load: 5.00, Cost: 9.55, Time: 0.159)
+    - Trip 6: O19 -> C115 -> C145 -> O19 (Type: Vehicle, Load: 100.00, Cost: 15.81, Time: 0.198)
+    - Trip 7: O19 -> C145 -> O19 (Type: Drone, Load: 3.14, Cost: 7.84, Time: 0.131)
+    - Trip 8: O19 -> C35 -> O19 (Type: Drone, Load: 5.00, Cost: 9.16, Time: 0.153)
+    - Trip 9: O19 -> C136 -> O19 (Type: Drone, Load: 5.00, Cost: 9.55, Time: 0.159)
+    - Trip 10: O19 -> C35 -> C136 -> C10 -> O19 (Type: Vehicle, Load: 100.00, Cost: 34.54, Time: 0.432)
+    - Trip 11: O19 -> C10 -> C29 -> C36 -> O19 (Type: Vehicle, Load: 100.00, Cost: 26.91, Time: 0.336)
+    - Trip 12: O19 -> C36 -> O19 (Type: Vehicle, Load: 72.60, Cost: 24.46, Time: 0.306)
+
+--- Customer Demand Fulfillment Status ---
+
+  Total Customers: 150
+    Fully Served:   150 (100.0%)
+    Partially Served: 0 (0.0%)
+    Unserved:       0 (0.0%)
+  Total Initial Demand: 12162.94
+  Total Remaining Demand: 0.0000
+
+  --- Detailed Status ---
+  CustIdx | Initial Demand | Final Remaining | Status
+  --------|----------------|-----------------|--------
+  0       |          46.06 |          0.0000 | Served
+  1       |          39.13 |          0.0000 | Served
+  2       |          58.55 |          0.0000 | Served
+  3       |          48.09 |          0.0000 | Served
+  4       |          86.47 |          0.0000 | Served
+  5       |         123.51 |          0.0000 | Served
+  6       |          49.44 |          0.0000 | Served
+  7       |          93.17 |          0.0000 | Served
+  8       |          56.37 |          0.0000 | Served
+  9       |          95.87 |          0.0000 | Served
+  10      |          35.10 |          0.0000 | Served
+  11      |          36.48 |          0.0000 | Served
+  12      |         117.36 |          0.0000 | Served
+  13      |          72.90 |          0.0000 | Served
+  14      |          96.07 |          0.0000 | Served
+  15      |          78.39 |          0.0000 | Served
+  16      |          79.76 |          0.0000 | Served
+  17      |          45.31 |          0.0000 | Served
+  18      |         109.54 |          0.0000 | Served
+  19      |          86.94 |          0.0000 | Served
+  20      |          97.83 |          0.0000 | Served
+  21      |         109.90 |          0.0000 | Served
+  22      |          90.36 |          0.0000 | Served
+  23      |          55.85 |          0.0000 | Served
+  24      |          80.80 |          0.0000 | Served
+  25      |          71.97 |          0.0000 | Served
+  26      |          47.61 |          0.0000 | Served
+  27      |         110.71 |          0.0000 | Served
+  28      |          74.25 |          0.0000 | Served
+  29      |          55.81 |          0.0000 | Served
+  30      |         112.71 |          0.0000 | Served
+  31      |          47.91 |          0.0000 | Served
+  32      |          77.40 |          0.0000 | Served
+  33      |          97.35 |          0.0000 | Served
+  34      |          73.67 |          0.0000 | Served
+  35      |          52.63 |          0.0000 | Served
+  36      |          97.36 |          0.0000 | Served
+  37      |          47.65 |          0.0000 | Served
+  38      |          65.08 |          0.0000 | Served
+  39      |          50.43 |          0.0000 | Served
+  40      |          57.86 |          0.0000 | Served
+  41      |         120.68 |          0.0000 | Served
+  42      |         111.68 |          0.0000 | Served
+  43      |          37.84 |          0.0000 | Served
+  44      |          97.12 |          0.0000 | Served
+  45      |          95.63 |          0.0000 | Served
+  46      |          95.43 |          0.0000 | Served
+  47      |          68.79 |          0.0000 | Served
+  48      |          90.62 |          0.0000 | Served
+  49      |         108.20 |          0.0000 | Served
+  50      |         112.83 |          0.0000 | Served
+  51      |          83.94 |          0.0000 | Served
+  52      |          35.91 |          0.0000 | Served
+  53      |          82.89 |          0.0000 | Served
+  54      |          90.46 |          0.0000 | Served
+  55      |          88.82 |          0.0000 | Served
+  56      |          67.99 |          0.0000 | Served
+  57      |         103.60 |          0.0000 | Served
+  58      |          66.32 |          0.0000 | Served
+  59      |          77.74 |          0.0000 | Served
+  60      |          40.91 |          0.0000 | Served
+  61      |          96.71 |          0.0000 | Served
+  62      |          70.22 |          0.0000 | Served
+  63      |          58.57 |          0.0000 | Served
+  64      |         115.64 |          0.0000 | Served
+  65      |          52.48 |          0.0000 | Served
+  66      |          65.71 |          0.0000 | Served
+  67      |         104.35 |          0.0000 | Served
+  68      |          70.32 |          0.0000 | Served
+  69      |         122.63 |          0.0000 | Served
+  70      |         114.98 |          0.0000 | Served
+  71      |          89.96 |          0.0000 | Served
+  72      |          46.68 |          0.0000 | Served
+  73      |          58.00 |          0.0000 | Served
+  74      |          56.38 |          0.0000 | Served
+  75      |         102.22 |          0.0000 | Served
+  76      |          81.21 |          0.0000 | Served
+  77      |         110.56 |          0.0000 | Served
+  78      |         105.20 |          0.0000 | Served
+  79      |          38.35 |          0.0000 | Served
+  80      |          66.36 |          0.0000 | Served
+  81      |          98.09 |          0.0000 | Served
+  82      |         114.71 |          0.0000 | Served
+  83      |         117.13 |          0.0000 | Served
+  84      |         121.51 |          0.0000 | Served
+  85      |          43.60 |          0.0000 | Served
+  86      |         120.91 |          0.0000 | Served
+  87      |          71.85 |          0.0000 | Served
+  88      |          53.11 |          0.0000 | Served
+  89      |          89.30 |          0.0000 | Served
+  90      |         118.37 |          0.0000 | Served
+  91      |          63.03 |          0.0000 | Served
+  92      |          37.98 |          0.0000 | Served
+  93      |          47.44 |          0.0000 | Served
+  94      |          95.26 |          0.0000 | Served
+  95      |          57.72 |          0.0000 | Served
+  96      |          51.39 |          0.0000 | Served
+  97      |          94.46 |          0.0000 | Served
+  98      |          71.81 |          0.0000 | Served
+  99      |         120.67 |          0.0000 | Served
+  100     |          74.13 |          0.0000 | Served
+  101     |          68.23 |          0.0000 | Served
+  102     |          78.45 |          0.0000 | Served
+  103     |         117.22 |          0.0000 | Served
+  104     |         101.61 |          0.0000 | Served
+  105     |          52.05 |          0.0000 | Served
+  106     |          87.48 |          0.0000 | Served
+  107     |          62.94 |          0.0000 | Served
+  108     |          61.85 |          0.0000 | Served
+  109     |          63.94 |          0.0000 | Served
+  110     |         123.28 |          0.0000 | Served
+  111     |          84.06 |          0.0000 | Served
+  112     |         116.75 |          0.0000 | Served
+  113     |          85.47 |          0.0000 | Served
+  114     |         122.22 |          0.0000 | Served
+  115     |         117.69 |          0.0000 | Served
+  116     |          83.42 |          0.0000 | Served
+  117     |         100.65 |          0.0000 | Served
+  118     |          74.30 |          0.0000 | Served
+  119     |          58.79 |          0.0000 | Served
+  120     |          90.55 |          0.0000 | Served
+  121     |          53.47 |          0.0000 | Served
+  122     |          70.70 |          0.0000 | Served
+  123     |          98.03 |          0.0000 | Served
+  124     |          51.81 |          0.0000 | Served
+  125     |          41.92 |          0.0000 | Served
+  126     |         103.78 |          0.0000 | Served
+  127     |         116.18 |          0.0000 | Served
+  128     |         108.69 |          0.0000 | Served
+  129     |         108.83 |          0.0000 | Served
+  130     |         120.97 |          0.0000 | Served
+  131     |          58.03 |          0.0000 | Served
+  132     |          96.25 |          0.0000 | Served
+  133     |          37.27 |          0.0000 | Served
+  134     |         102.35 |          0.0000 | Served
+  135     |         100.34 |          0.0000 | Served
+  136     |          51.71 |          0.0000 | Served
+  137     |         113.22 |          0.0000 | Served
+  138     |         110.28 |          0.0000 | Served
+  139     |         117.44 |          0.0000 | Served
+  140     |         122.86 |          0.0000 | Served
+  141     |          62.50 |          0.0000 | Served
+  142     |          42.11 |          0.0000 | Served
+  143     |         102.27 |          0.0000 | Served
+  144     |          50.43 |          0.0000 | Served
+  145     |          90.45 |          0.0000 | Served
+  146     |          90.91 |          0.0000 | Served
+  147     |          63.59 |          0.0000 | Served
+  148     |          72.98 |          0.0000 | Served
+  149     |          56.55 |          0.0000 | Served
+
+
+--- Parameters Used ---
+  Algorithm Parameters:
+    - crossover_rate: 0.75
+    - elite_count: 1
+    - mutation_rate: 0.15
+    - num_generations: 400
+    - population_size: 100
+    - tournament_size: 3
+
+Report generated on: 2025-05-07 13:53:41
+Report generation time: 0.020 seconds.
+======================================================================
+--- End of Report: Genetic Algorithm ---
+======================================================================
